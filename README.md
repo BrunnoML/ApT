@@ -72,4 +72,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com :coffee: por [BrunnoML](htts://www.brunnoml.com.br)
+Feito com :coffee: por [BrunnoML](https://www.brunnoml.com.br)
