@@ -40,7 +40,6 @@ Essa aplicação usa a biblioteca Whisper para transcrever arquivos de áudio pa
 Também foi idealizada para usar como projeto de extensão para ser apresentado na faculdade Estádio, no curso Sistemas de Informação.
 Pensei em usar ambiente gráfico para facilitar a usabilidade do usuário sem conhecimento em tecnologia.
 
-- [Acesse o projeto finalizado, online](https://brunnoml.github.io/ApT/)
 
 ## 🎯 Funcionalidades
 
