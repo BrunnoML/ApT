@@ -57,11 +57,26 @@ Para usar a aplicação localmente, siga os passos abaixo:
 ```
 git clone https://github.com/BrunnoML/ApT.git
 ```
-2. Instale as dependências com o arquivo requirements.txt:
+2. Crie o ambiente virtual:
+```
+python -m venv venv
+```
+3. Ative o ambiente virtual:
+- No Windows:
+```
+.\venv\Scripts\activate
+```
+- No macOS/Linux:
+```
+source venv/bin/activate
+```
+Após ativar o ambiente virtual, seu prompt deve mudar para algo como (venv).
+
+4. Instale as dependências com o arquivo requirements.txt:
 ```
 pip install -r requirements.txt
 ```
-3. Execute o programa:
+5. Execute o programa:
 ```
 python apt.py
 ```
