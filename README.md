@@ -59,8 +59,20 @@ git clone https://github.com/BrunnoML/ApT.git
 ```
 2. Crie o ambiente virtual:
 ```
-python -m venv venv
+python -m venv .venv
 ```
+O projeto foi desenvolvido usando a versão 3.12.6 do Python
+- Para usar o ambiente nesta versão, pode criar o ambiente virtual:
+- No Windows:
+```
+py -3.12 -m venv .venv
+```
+- No macOS/Linux:
+```
+python3.12 -m venv .venv
+```
+OBS: Pode substituir `.venv` pelo nome do ambiente virtual que desejar.
+
 3. Ative o ambiente virtual:
 - No Windows:
 ```
