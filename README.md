@@ -56,41 +56,72 @@ Para usar a aplicação localmente, siga os passos abaixo:
 ```
 git clone https://github.com/BrunnoML/ApT.git
 ```
-2. Crie o ambiente virtual:
+
+2. Acessar a pasta criada do projeto:
+```
+cd apt
+```
+
+3. Crie o ambiente virtual:
+
+O projeto foi desenvolvido usando a versão 3.12.6 do Python.
+Para usar o ambiente nesta versão, pode criar o ambiente virtual usando o `venv` ou `conda`:
+
+3.1 O venv é padrão do Python, mas não consegue criar um ambiente virtual com uma versão do Python diferente da instalada no seu sistema operacional, portanto, se optar por usar venv, é recomendável instalar previamente o Python na versão 3.12.6.
+
+- Usando o venv para criar o ambiente virtual (comando utilizado tanto para Windows quanto para macOS:
 ```
 python -m venv .venv
 ```
-O projeto foi desenvolvido usando a versão 3.12.6 do Python
-- Para usar o ambiente nesta versão, pode criar o ambiente virtual:
-- No Windows:
-```
-py -3.12 -m venv .venv
-```
-- No macOS/Linux:
-```
-python3.12 -m venv .venv
-```
+
 OBS: Pode substituir `.venv` pelo nome do ambiente virtual que desejar.
 
-3. Ative o ambiente virtual:
+- Ative o ambiente virtual:
+  
 - No Windows:
 ```
-.\venv\Scripts\activate
+.venv\Scripts\activate
 ```
+
 - No macOS/Linux:
 ```
-source venv/bin/activate
+source .venv/bin/activate
 ```
-Após ativar o ambiente virtual, seu prompt deve mudar para algo como (venv).
+
+- Desative o ambiente virtual:
+```
+deactivate
+```
+
+Após ativar o ambiente virtual, seu prompt deve mudar para algo como (.venv).
+
+3.2 Utilizando o conda para criar o ambiente virtual, Baixe e instale a versão mais recente do [Miniconda] (https://docs.conda.io/en/latest/miniconda.html)
+
+- Criar o ambiente virtual conda com o Python na versão 3.12.6:
+```
+conda create -n .venv python=3.12.6
+```
+
+- Ativar o ambiente virtual conda:
+```
+conda activate .venv
+```
+
+- Desativar o ambiente virtual conda:
+```
+conda deactivate
+```
 
 4. Instale as dependências com o arquivo requirements.txt:
 ```
 pip install -r requirements.txt
 ```
+
 5. Execute o programa:
 ```
 python apt.py
 ```
+
 
 ## 🪪 Licença
 
