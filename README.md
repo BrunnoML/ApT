@@ -64,10 +64,10 @@ cd apt
 
 3. Crie o ambiente virtual:
 
-O projeto foi desenvolvido usando a versão 3.12.6 do Python.
+O projeto foi desenvolvido usando a versão 3.12 do Python.
 Para usar o ambiente nesta versão, pode criar o ambiente virtual usando o `venv` ou `conda`:
 
-3.1 O venv é padrão do Python, mas não consegue criar um ambiente virtual com uma versão do Python diferente da instalada no seu sistema operacional, portanto, se optar por usar venv, é recomendável instalar previamente o Python na versão 3.12.6.
+3.1 O venv é padrão do Python, mas não consegue criar um ambiente virtual com uma versão do Python diferente da instalada no seu sistema operacional, portanto, se optar por usar venv, é recomendável instalar previamente o Python na versão 3.12.
 
 - Usando o venv para criar o ambiente virtual (comando utilizado tanto para Windows quanto para macOS:
 ```
@@ -97,9 +97,9 @@ Após ativar o ambiente virtual, seu prompt deve mudar para algo como (.venv).
 
 3.2 Utilizando o conda para criar o ambiente virtual, Baixe e instale a versão mais recente do [Miniconda] (https://docs.conda.io/en/latest/miniconda.html)
 
-- Criar o ambiente virtual conda com o Python na versão 3.12.6:
+- Criar o ambiente virtual conda com o Python na versão 3.12:
 ```
-conda create -n .venv python=3.12.6
+conda create -n .venv python=3.12
 ```
 
 - Ativar o ambiente virtual conda:
