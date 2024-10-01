@@ -31,6 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Torch
 - Tkinter
 - Venv
+- Conda
 - VSCode
 - Git e Github
 
@@ -103,6 +104,8 @@ conda create -n .venv python=3.12
 ```
 
 - Ativar o ambiente virtual conda:
+  
+Obs: se for a primeira vez que for utilizar o conda, primeiro rode: `conda init`
 ```
 conda activate .venv
 ```
