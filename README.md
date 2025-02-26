@@ -52,30 +52,41 @@ Pensei em usar ambiente gráfico para facilitar a usabilidade do usuário sem co
 
 ## 🔈 Configuração
 
-1. Baixar o ffmpeg:
+#### 1. Baixar o ffmpeg:
 
 🔗 https://ffmpeg.org/download.html
 
-2. Extrair e Instalar:
+#### 2. Extrair e Instalar:
 
-	Extraia o arquivo ZIP baixado.
-	•	Local de instalação:
-📂 Recomendo extrair para: C:\ffmpeg (para facilitar a configuração).
+	* Extraia o arquivo ZIP baixado
 
-3. Configurar a Variável de Ambiente
+	*	Local de instalação:
 
-Para que o Windows reconheça o FFmpeg no terminal, siga estes passos:
-	1.	Copie o caminho do diretório bin
-	•	Se você extraiu para C:\ffmpeg, o caminho correto é:
-C:\ffmpeg\bin
-	2.	Adicione à variável PATH
-	•	Pressione Win + R, digite sysdm.cpl e pressione Enter.
-	•	Vá até a aba Avançado → clique em Variáveis de Ambiente.
-	•	Na seção Variáveis do Sistema, encontre Path e clique em Editar.
-	•	Clique em Novo e cole C:\ffmpeg\bin.
-	•	Clique em OK para salvar.
+       -   📂 Recomendo extrair para: C:\ffmpeg (para facilitar a configuração).
 
-4. Testar a Instalação
+#### 3. Configurar a Variável de Ambiente:
+
+#### Para que o Windows reconheça o FFmpeg no terminal, siga estes passos:
+
+a.	Copie o caminho do diretório bin
+
+b. Se você extraiu para C:\ffmpeg, o caminho correto é: C:\ffmpeg\bin
+
+c.	Adicione à variável PATH:
+
+    •	Pressione Win + R, digite sysdm.cpl e pressione Enter.
+
+    •	Vá até a aba Avançado → clique em Variáveis de Ambiente.
+
+    •	Na seção Variáveis do Sistema, encontre Path e clique em Editar.
+
+    •	Clique em Novo e cole C:\ffmpeg\bin.
+
+    •	Clique em OK para salvar.
+
+
+
+c. Testar a Instalação
 
 Abra o Prompt de Comando (cmd) e digite:
 ```
