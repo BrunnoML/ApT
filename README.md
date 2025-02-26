@@ -7,8 +7,9 @@ Projeto para transcrever arquivos de áudio para texto.
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-funcionalidades">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#-configuração">Configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -48,6 +49,41 @@ Pensei em usar ambiente gráfico para facilitar a usabilidade do usuário sem co
 - Selecionar uma pasta contendo os arquivos de áudio para transcrição;
 - Escolher uma pasta para armazenar o arquivo da transcrição no formato `.txt`;
 - Selecionar o modelo Whisper (`base`, `medium` ou `large`) para transcrição.
+
+## 🔈 Configuração
+
+1. Baixar o ffmpeg:
+
+🔗 https://ffmpeg.org/download.html
+
+2. Extrair e Instalar:
+
+	Extraia o arquivo ZIP baixado.
+	•	Local de instalação:
+📂 Recomendo extrair para: C:\ffmpeg (para facilitar a configuração).
+
+3. Configurar a Variável de Ambiente
+
+Para que o Windows reconheça o FFmpeg no terminal, siga estes passos:
+	1.	Copie o caminho do diretório bin
+	•	Se você extraiu para C:\ffmpeg, o caminho correto é:
+C:\ffmpeg\bin
+	2.	Adicione à variável PATH
+	•	Pressione Win + R, digite sysdm.cpl e pressione Enter.
+	•	Vá até a aba Avançado → clique em Variáveis de Ambiente.
+	•	Na seção Variáveis do Sistema, encontre Path e clique em Editar.
+	•	Clique em Novo e cole C:\ffmpeg\bin.
+	•	Clique em OK para salvar.
+
+4. Testar a Instalação
+
+Abra o Prompt de Comando (cmd) e digite:
+```
+ffmpeg -version
+```
+Se estiver instalado corretamente, você verá informações sobre a versão do FFmpeg.
+
+
 
 ## 🛠️ Instalação
 
