@@ -52,47 +52,48 @@ Pensei em usar ambiente gráfico para facilitar a usabilidade do usuário sem co
 
 ## 🔈 Configuração
 
-#### 1. Baixar o ffmpeg:
+#### 1. Baixar o ffmpeg (binários pré-compilados para Windows):
 
-🔗 https://ffmpeg.org/download.html
+> ⚠️ **Atenção:** Não baixe o código-fonte do site oficial (ffmpeg.org). Baixe os binários prontos para uso no link abaixo.
+
+🔗 https://www.gyan.dev/ffmpeg/builds/
+
+Na seção **"release builds"**, baixe o arquivo: **`ffmpeg-release-essentials.zip`**
 
 #### 2. Extrair e Instalar:
 
-	* Extraia o arquivo ZIP baixado
+a. Extraia o arquivo ZIP baixado.
 
-	*	Local de instalação:
+b. Dentro do ZIP haverá uma pasta como `ffmpeg-x.x.x-essentials_build\` — entre nela.
 
-       -   📂 Recomendo extrair para: C:\ffmpeg (para facilitar a configuração).
+c. Copie as pastas `bin\`, `doc\` e `presets\` para `C:\ffmpeg`.
+
+   - 📂 Resultado esperado: `C:\ffmpeg\bin\` deve conter os arquivos `ffmpeg.exe`, `ffplay.exe` e `ffprobe.exe`.
 
 #### 3. Configurar a Variável de Ambiente:
 
 #### Para que o Windows reconheça o FFmpeg no terminal, siga estes passos:
 
-a.	Copie o caminho do diretório bin
+a. Pressione `Win + R`, digite `sysdm.cpl` e pressione Enter.
 
-b. Se você extraiu para C:\ffmpeg, o caminho correto é: C:\ffmpeg\bin
+b. Vá até a aba **Avançado** → clique em **Variáveis de Ambiente**.
 
-c.	Adicione à variável PATH:
+c. Na seção **Variáveis do Sistema**, encontre `Path` e clique em **Editar**.
 
-    •	Pressione Win + R, digite sysdm.cpl e pressione Enter.
+d. Clique em **Novo** e cole `C:\ffmpeg\bin`.
 
-    •	Vá até a aba Avançado → clique em Variáveis de Ambiente.
+e. Clique em **OK** para salvar.
 
-    •	Na seção Variáveis do Sistema, encontre Path e clique em Editar.
+#### 4. Testar a Instalação:
 
-    •	Clique em Novo e cole C:\ffmpeg\bin.
-
-    •	Clique em OK para salvar.
-
-
-
-c. Testar a Instalação
-
-Abra o Prompt de Comando (cmd) e digite:
+Abra o Prompt de Comando (cmd) ou PowerShell e digite:
 ```
 ffmpeg -version
 ```
-Se estiver instalado corretamente, você verá informações sobre a versão do FFmpeg.
+Se estiver instalado corretamente, você verá informações sobre a versão do FFmpeg, como:
+```
+ffmpeg version 8.x-essentials_build-www.gyan.dev ...
+```
 
 
 
