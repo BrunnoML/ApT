@@ -20,7 +20,7 @@ Projeto para transcrever arquivos de áudio para texto.
 <br>
 
 <p align="center">
-  <img alt="ApT" src="/images/preview.png" width="600px">
+  <img alt="ApT" src="/images/preview.png" width="400px">
 </p>
 
 ## 🚀 Tecnologias
