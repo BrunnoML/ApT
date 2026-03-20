@@ -163,12 +163,26 @@ conda activate .venv
 conda deactivate
 ```
 
-4. Instale as dependências com o arquivo requirements.txt:
+4. Atualize o pip e instale o setuptools e wheel:
+
 ```
-pip install -r requirements.txt
+pip install --upgrade pip
+pip install setuptools==69.5.1 wheel
 ```
 
-5. Execute o programa:
+> ⚠️ **Por que usar a versão específica `69.5.1` do setuptools?**
+> O pacote `openai-whisper` precisa ser compilado durante a instalação e depende do módulo `pkg_resources`, que faz parte do `setuptools`. Versões mais recentes do `setuptools` (a partir da 71.x) removeram esse módulo como importável direto, causando o erro `ModuleNotFoundError: No module named 'pkg_resources'`.
+> A versão `69.5.1` é a mais recente que ainda inclui o `pkg_resources` de forma compatível.
+> O pip pode ser atualizado normalmente para a versão mais recente (26.x), pois ele não tem essa limitação.
+
+5. Instale as dependências com o arquivo requirements.txt:
+```
+pip install --no-build-isolation -r requirements.txt
+```
+
+> ℹ️ A flag `--no-build-isolation` faz o pip usar o ambiente virtual atual para compilar os pacotes, em vez de criar um ambiente temporário isolado. Isso garante que o `setuptools` instalado no passo anterior esteja disponível durante a compilação do `openai-whisper`.
+
+6. Execute o programa:
 ```
 python apt.py
 ```

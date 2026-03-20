@@ -12,10 +12,8 @@ networkx==3.3
 numba==0.60.0
 numpy==2.0.2
 openai-whisper==20240927
-pip==24.2
 regex==2024.9.11
 requests==2.32.3
-setuptools==75.1.0
 sympy==1.13.3
 tiktoken==0.7.0
 torch==2.4.1
