@@ -1,3 +1,5 @@
+customtkinter>=5.2.0
+cryptography>=42.0
 mutagen==1.47.0
 pillow==12.1.1
 reportlab==4.4.10

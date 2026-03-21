@@ -2,6 +2,14 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 import whisper
 import os
+import shutil
+
+# Garante que o ffmpeg está no PATH independente do terminal usado
+_FFMPEG_PATHS = [r"C:\ffmpeg\bin", r"C:\ffmpeg", r"C:\Program Files\ffmpeg\bin"]
+for _p in _FFMPEG_PATHS:
+    if os.path.exists(os.path.join(_p, "ffmpeg.exe")):
+        os.environ["PATH"] = _p + os.pathsep + os.environ.get("PATH", "")
+        break
 import platform
 import hashlib
 import socket
@@ -250,12 +258,13 @@ def gerar_laudo_pdf(output_path, unidade, responsavel, modelo, arquivos_dados, h
 # ─────────────────────────────────────────────
 def select_input_folder():
     folder_selected = filedialog.askdirectory()
-    input_folder.set(folder_selected)
-
+    if folder_selected:
+        input_folder.set(os.path.normpath(folder_selected))
 
 def select_output_folder():
     folder_selected = filedialog.askdirectory()
-    output_folder.set(folder_selected)
+    if folder_selected:
+        output_folder.set(os.path.normpath(folder_selected))
 
 
 def start_transcription():
@@ -307,7 +316,7 @@ def start_transcription():
 
     with tqdm(total=total_files, desc="Transcrevendo áudios") as pbar:
         for filename in arquivos:
-            audio_path = os.path.join(input_path, filename)
+            audio_path = os.path.normpath(os.path.join(input_path, filename))
             print(f"Iniciando transcrição de {filename}")
 
             # Hash SHA-256 ANTES do processamento

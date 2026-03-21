@@ -1,4 +1,7 @@
 .DS_Store
-.Venv
+.venv/
+.Venv/
 CLAUDE.md
 docs/
+.apt_license
+*.apt_lic
