@@ -1,202 +1,219 @@
-<h1 align="center"> ApT — Áudio para Texto </h1>
+<h1 align="center">🎙️ ApT - Áudio para Texto</h1>
 
 <p align="center">
-Ferramenta de transcrição forense de áudio para texto, com geração automática de laudo PDF e cadeia de custódia conforme a Lei 13.964/2019 (Pacote Anticrime).
+Transforme áudios em texto de forma rápida, organizada e profissional.
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Ferramenta ideal para profissionais da área jurídica, investigativa e pericial.
+</p>
+
+<p align="center">
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-planos">Planos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-configuração">Configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-modalidades-de-uso">Modalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licenciamento">Licenciamento</a>
 </p>
+
+---
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Apache-2.0&color=49AA26&labelColor=000000">
+  <img alt="ApT" src="/images/preview.png" width="500px">
 </p>
 
-<br>
+---
 
-<p align="center">
-  <img alt="ApT" src="/images/preview.png" width="400px">
-</p>
+## ⚖️ Sobre o ApT
 
-## Tecnologias
+O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada.
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Foi desenvolvido inicialmente para atender demandas reais de análise de grandes volumes de áudio, permitindo:
 
-- Python 3.12
-- OpenAI Whisper (transcrição de áudio local)
-- CustomTkinter (interface moderna)
-- ReportLab (geração de PDF forense)
-- Mutagen (leitura de metadados de áudio)
-- Cryptography — Ed25519 (verificação de licença)
-- PyInstaller (empacotamento em executável)
-- FFmpeg (conversão de formatos de áudio)
+- localizar rapidamente trechos relevantes
+- organizar informações para investigação ou estudo
+- otimizar o tempo de trabalho
 
-## Projeto
+---
 
-O **ApT** é uma ferramenta para transcrição em massa de arquivos de áudio com foco em **uso forense e jurídico**. Surgiu da necessidade de transcrever grandes volumes de arquivos de áudio e facilitar a localização de conteúdo por palavras-chave, preservando a integridade da prova digital.
+## 🎯 Público-alvo
 
-O projeto foi idealizado para atender delegacias, batalhões, escritórios de advocacia, promotorias e peritos que necessitam de laudos prontos para juntada ao processo judicial, com cadeia de custódia documentada conforme a **Lei 13.964/2019 (Pacote Anticrime)**.
+O ApT é especialmente útil para:
 
-### Arquitetura modular
+- Delegados e investigadores
+- Advogados e defensores públicos
+- Promotores e magistrados
+- Peritos e analistas
+- Estudantes e pesquisadores
 
-```
-apt/
-├── main.py               ← ponto de entrada
-├── core/
-│   ├── audio_utils.py    ← hash SHA-256, duração
-│   ├── pdf_report.py     ← geração do laudo forense
-│   └── transcriber.py   ← transcrição com threading
-├── licensing/
-│   ├── license_manager.py   ← controle de uso e licença
-│   └── license_validator.py ← verificação Ed25519 (chave pública)
-├── ui/
-│   └── app.py            ← interface CustomTkinter
-└── utils/
-    └── ffmpeg_setup.py   ← configuração do ffmpeg
-```
+---
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-- Interface gráfica moderna com tema escuro (CustomTkinter)
-- Transcrição de áudio 100% local com Whisper (base, medium ou large)
-- Suporte a `.m4a`, `.mp3`, `.wav`, `.ogg`, `.mp4`, `.wma`, `.flac`, `.aac`
-- Cálculo de hash **SHA-256** de cada arquivo **antes** de qualquer processamento
-- Geração de **laudo PDF forense** estruturado com:
-  - Cabeçalho: unidade, responsável, data/hora, hostname, modelo Whisper
-  - Por arquivo: nome, hash SHA-256, duração e transcrição completa
-  - Declaração de conformidade com a Lei 13.964/2019
-  - Hash SHA-256 do próprio PDF gerado
-- Barra de progresso em tempo real sem travar a interface (threading)
-- Log de operações em tempo real
-- Sistema de licença por arquivo `.apt_lic` com assinatura criptográfica Ed25519
+- Interface gráfica moderna com tema escuro
+- Transcrição automática de áudios usando IA (100% local)
+- Processamento de múltiplos arquivos em lote
+- Seleção de modelos Whisper (`base`, `medium`, `large`)
+- Exportação de transcrições em `.txt`
+- Geração de **laudo PDF forense** com cadeia de custódia (hash SHA-256)
+- Organização por pastas de entrada e saída
 
-## Planos
+---
 
-O ApT adota modelo **freemium**. A versão gratuita está disponível para qualquer usuário. Para uso profissional e ilimitado, consulte os planos disponíveis em:
+## 🔐 Modalidades de Uso
 
-**[https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)**
+O ApT segue um modelo **freemium**:
 
-Veja também o arquivo [PRICING.md](PRICING.md) para descrição detalhada dos planos.
+### 🟢 Versão Gratuita
+- Transcrição de áudio para texto
+- Uso local da aplicação
+- Geração limitada de laudos PDF
 
-## Configuração
+### 🔵 Versão Licenciada (Profissional)
+- Geração ilimitada de laudos PDF forenses
+- Cadeia de custódia completa em cada laudo
+- Recursos adicionais e personalizações
+- Suporte e atualizações
+- Licença com validade anual
 
-### 1. Baixar o FFmpeg (binários pré-compilados para Windows)
+👉 Para saber mais sobre os planos e adquirir uma licença:
 
-> **Atenção:** Não baixe o código-fonte do site oficial (ffmpeg.org). Baixe os binários prontos no link abaixo.
+🔗 https://www.brunnoml.com.br/apt
 
-**[https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)**
+---
 
-Na seção **"release builds"**, baixe: **`ffmpeg-release-essentials.zip`**
+## 🛠️ Instalação
 
-### 2. Extrair e instalar
+### 👤 Usuário final (recomendado)
 
-a. Extraia o arquivo ZIP.
+> Em breve será disponibilizada uma versão instalável.
 
-b. Dentro do ZIP haverá uma pasta como `ffmpeg-x.x.x-essentials_build\` — entre nela.
+O objetivo é permitir que o usuário:
 
-c. Copie as pastas `bin\`, `doc\` e `presets\` para `C:\ffmpeg`.
+- baixe o instalador
+- execute com duplo clique
+- utilize sem necessidade de terminal
 
-   - Resultado esperado: `C:\ffmpeg\bin\` deve conter `ffmpeg.exe`, `ffplay.exe` e `ffprobe.exe`.
+---
 
-### 3. Configurar a variável de ambiente
+### 💻 Modo desenvolvedor (instalação manual)
 
-a. Pressione `Win + R`, digite `sysdm.cpl` e pressione Enter.
+1. Clone o repositório:
 
-b. Vá até a aba **Avançado** → clique em **Variáveis de Ambiente**.
-
-c. Na seção **Variáveis do Sistema**, encontre `Path` e clique em **Editar**.
-
-d. Clique em **Novo** e cole `C:\ffmpeg\bin`.
-
-e. Clique em **OK** para salvar.
-
-### 4. Testar a instalação
-
-```
-ffmpeg -version
-```
-
-Saída esperada:
-```
-ffmpeg version 8.x-essentials_build-www.gyan.dev ...
-```
-
-## Instalação
-
-### 1. Clone o repositório
-
-```
+```bash
 git clone https://github.com/BrunnoML/ApT.git
 cd apt
 ```
 
-### 2. Crie o ambiente virtual
+2. Crie um ambiente virtual:
 
-O projeto foi desenvolvido com Python 3.12.
-
-**Usando venv:**
-
-```
+```bash
 python -m venv .venv
 ```
 
-Ative o ambiente virtual:
+Ative:
 
-- Windows:
-```
+**Windows**
+
+```bash
 .venv\Scripts\activate
 ```
 
-- macOS/Linux:
-```
+**Linux/macOS**
+
+```bash
 source .venv/bin/activate
 ```
 
-**Usando conda:**
+3. Instale dependências:
 
-```
-conda create -n apt python=3.12
-conda activate apt
-```
-
-### 3. Atualize o pip e instale o setuptools
-
-```
+```bash
 pip install --upgrade pip
 pip install setuptools==69.5.1 wheel
-```
-
-> **Por que `setuptools==69.5.1`?**
-> O pacote `openai-whisper` precisa ser compilado e depende do módulo `pkg_resources`, parte do `setuptools`. Versões a partir da 71.x removeram esse módulo, causando `ModuleNotFoundError: No module named 'pkg_resources'`. A versão 69.5.1 é a mais recente compatível.
-
-### 4. Instale as dependências
-
-```
 pip install --no-build-isolation -r requirements.txt
 ```
 
-> A flag `--no-build-isolation` garante que o `setuptools` instalado no passo anterior esteja disponível durante a compilação do `openai-whisper`.
+4. Execute:
 
-### 5. Execute o programa
-
-```
+```bash
 python main.py
 ```
 
-Na primeira execução com o modelo `large`, o Whisper irá baixar o modelo (~2,88 GB). Esse download ocorre uma única vez e o modelo fica armazenado localmente.
+---
 
-## Memo Licença
+## 🔈 Configuração do FFmpeg
 
-Este projeto é distribuído sob a **Apache License 2.0**. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+O FFmpeg é necessário para o processamento dos áudios.
 
-A versão licenciada (premium) está sujeita ao [EULA](EULA.md).
+Atualmente, a instalação é manual, conforme descrito abaixo.
+
+> ⚠️ Em versões futuras, o FFmpeg será incorporado automaticamente ao sistema.
+
+### Download:
+
+[https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
+
+Baixe:
+
+```
+ffmpeg-release-essentials.zip
+```
+
+Configure conforme instruções padrão do Windows.
 
 ---
 
-Feito com :coffee: por [BrunnoML](https://www.brunnoml.com.br)
+## 🚀 Tecnologias
+
+- Python 3.12
+- Whisper (OpenAI) — transcrição de áudio local
+- CustomTkinter — interface moderna
+- ReportLab — geração de laudo PDF
+- Cryptography — verificação de licença (Ed25519)
+- FFmpeg — processamento de áudio
+
+---
+
+## 🔐 Licenciamento
+
+O projeto possui duas camadas de uso:
+
+### 📂 Código-fonte (comunitário)
+
+Disponível sob a **Apache License 2.0**, conforme definido no arquivo [`LICENSE`](LICENSE).
+
+### 💼 Uso profissional
+
+O uso de funcionalidades avançadas está sujeito a licenciamento, conforme descrito nos arquivos:
+
+- [`TERMS.md`](TERMS.md) — Termos de uso
+- [`EULA.md`](EULA.md) — Contrato de licença de usuário final
+- [`PRICING.md`](PRICING.md) — Planos disponíveis
+
+---
+
+## 📈 Evolução do Projeto
+
+O ApT está em evolução contínua, com melhorias planejadas:
+
+- Instalador simplificado (sem necessidade de terminal)
+- FFmpeg incorporado automaticamente
+- Identificação de interlocutores (diarização)
+- Detecção de palavras-chave configurável
+- Integração com outras ferramentas forenses
+
+---
+
+## ☕ Autor
+
+Desenvolvido por **Brunno ML**
+
+🔗 [https://www.brunnoml.com.br](https://www.brunnoml.com.br)
+
+---
+
+## ⭐ Contribuição
+
+Sugestões, melhorias e feedbacks são bem-vindos!
+
+Se este projeto foi útil para você, considere dar uma ⭐ no repositório.
