@@ -38,6 +38,10 @@ Ativada mediante arquivo de licença válido (`.apt_lic`):
 - Recursos completos conforme o plano adquirido
 - Suporte técnico
 
+### 2.3 Licenças Institucionais
+
+Licenças destinadas a órgãos públicos, empresas ou organizações de maior porte podem possuir condições específicas de uso, incluindo número de usuários autorizados, abrangência organizacional e personalizações, conforme definido no ato da contratação. Prevalece sobre esta cláusula o que estiver expressamente acordado entre o Autor e a instituição contratante.
+
 ---
 
 ## 3. Concessão de Licença
@@ -62,6 +66,8 @@ O acesso às funcionalidades premium depende de um arquivo de licença digital (
 
 O software não contém mecanismos para geração de licenças pelo usuário ou por terceiros.
 
+As licenças digitais (`.apt_lic`) são emitidas **exclusivamente pelo Autor ou por canais oficiais por ele autorizados**. Qualquer licença obtida fora desses canais é inválida e pode caracterizar violação deste contrato.
+
 ---
 
 ## 5. Validade e Expiração
@@ -82,6 +88,7 @@ O usuário não poderá, sob nenhuma circunstância:
 - Transferir o arquivo `.apt_lic` para terceiros ou outras unidades não autorizadas
 - Utilizar o software para fins ilícitos ou que violem a legislação vigente
 - Comercializar o software sem autorização expressa do Autor
+- Utilizar o software, seu código-fonte ou qualquer parte de sua lógica para criação de soluções concorrentes com finalidade comercial, sem autorização prévia e expressa do Autor
 
 ---
 
