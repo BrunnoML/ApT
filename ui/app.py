@@ -14,12 +14,15 @@ from tkinter import filedialog, messagebox
 from core.transcriber import transcrever_arquivos
 from licensing.license_manager import (
     pode_gerar_laudo,
+    pode_transcrever,
     registrar_laudo,
     tem_licenca_ativa,
     get_status_licenca,
     ativar_licenca,
     MAX_FREE_LAUDOS,
+    MAX_FREE_SEGUNDOS,
     laudos_gerados,
+    segundos_restantes_gratis,
 )
 
 
@@ -190,7 +193,11 @@ class AptApp(ctk.CTk):
 
     def _atualizar_status_licenca(self) -> None:
         status = get_status_licenca()
-        cor = "#22C55E" if status["valida"] else ("#EF4444" if laudos_gerados() >= MAX_FREE_LAUDOS else "#3B82F6")
+        limite_atingido = (
+            not status["valida"]
+            and (laudos_gerados() >= MAX_FREE_LAUDOS or segundos_restantes_gratis() <= 0)
+        )
+        cor = "#22C55E" if status["valida"] else ("#EF4444" if limite_atingido else "#3B82F6")
         self._label_status_laudo.configure(text=status["mensagem"], text_color=cor)
         self._label_status_lic.configure(
             text="Licença ativa" if status["valida"] else "Sem licença premium",
@@ -245,11 +252,20 @@ class AptApp(ctk.CTk):
         if gerar_pdf and not responsavel:
             messagebox.showwarning("Atenção", "Informe o Responsável para gerar o laudo PDF.")
             return
+        if not tem_licenca_ativa() and not pode_transcrever():
+            messagebox.showinfo(
+                "Versão Gratuita — Limite Atingido",
+                f"Você já processou {MAX_FREE_SEGUNDOS // 60} minutos de áudio na versão gratuita.\n\n"
+                "Para processamento ilimitado, adquira a licença do ApT.\n\n"
+                "Carregue o arquivo .apt_lic na seção Licença Premium."
+            )
+            return
+
         if gerar_pdf and not pode_gerar_laudo():
             messagebox.showinfo(
-                "Versão Gratuita",
+                "Versão Gratuita — Limite Atingido",
                 "Você já utilizou o laudo gratuito disponível na versão de teste.\n\n"
-                "Para gerar laudos ilimitados, adquira a licença anual do ApT.\n\n"
+                "Para laudos ilimitados, adquira a licença do ApT.\n\n"
                 "Carregue o arquivo .apt_lic na seção Licença Premium."
             )
             return

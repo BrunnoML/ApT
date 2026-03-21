@@ -1,93 +1,161 @@
-# Contrato de Licença de Usuário Final (EULA)
-## ApT — Áudio para Texto | Versão Licenciada (Premium)
+# 📄 Licença de Uso de Software (EULA)
+## ApT — Áudio para Texto
 
-**Versão:** 1.0
-**Vigência:** Março de 2026
+Este documento estabelece os termos e condições para utilização do software **ApT - Áudio para Texto**.
 
----
-
-## 1. Partes
-
-Este Contrato de Licença de Usuário Final ("Contrato") é celebrado entre:
-
-- **Licenciante:** BrunnoML — autor e detentor dos direitos sobre o ApT
-- **Licenciado:** pessoa física ou pessoa jurídica de direito público ou privado que adquiriu uma licença válida do ApT
+Ao instalar ou utilizar o software, o usuário declara que leu, compreendeu e concorda integralmente com estes termos.
 
 ---
 
-## 2. Concessão de Licença
+## 1. Definições
 
-O Licenciante concede ao Licenciado uma licença **não exclusiva, intransferível e limitada** para instalar e utilizar o Software ApT na versão licenciada, nas condições deste Contrato.
-
-### 2.1 Plano Individual
-
-A licença é válida para **um único usuário identificado**, em até dois dispositivos de uso simultâneo.
-
-### 2.2 Plano Profissional / Unidade
-
-A licença é válida para uso por **equipe de até cinco usuários** vinculados à mesma unidade identificada no arquivo de licença (`.apt_lic`).
-
-### 2.3 Plano Institucional
-
-A licença é válida para uso por **número ilimitado de usuários** dentro do órgão ou empresa identificada no arquivo de licença.
+- **Software**: Aplicação ApT - Áudio para Texto.
+- **Autor**: BrunnoML, detentor dos direitos sobre o software.
+- **Usuário**: Pessoa física ou jurídica que instala ou utiliza o software.
+- **Licença**: Direito de uso concedido ao usuário, de forma não exclusiva, intransferível e por prazo determinado.
+- **Arquivo de Licença (.apt_lic)**: Arquivo eletrônico assinado digitalmente com criptografia assimétrica (Ed25519), emitido exclusivamente pelo Autor, utilizado para habilitar funcionalidades premium.
 
 ---
 
-## 3. Restrições
+## 2. Modalidades de Uso
 
-O Licenciado **não pode**, sob nenhuma circunstância:
+O software é disponibilizado em modelo **freemium**:
 
-- Redistribuir, sublicenciar, vender, alugar ou transferir o arquivo de licença (`.apt_lic`) a terceiros
-- Utilizar a licença em unidade, órgão ou empresa diferente do identificado no arquivo de licença
-- Compartilhar o arquivo `.apt_lic` com usuários ou instituições não autorizados
-- Tentar contornar, modificar ou falsificar o mecanismo de verificação de licença
-- Utilizar engenharia reversa sobre os componentes de verificação de licença
+### 2.1 Versão Gratuita
 
----
+Permite avaliação do software com as seguintes limitações:
 
-## 4. Arquivo de Licença
+- Até **30 minutos** de áudio processado (acumulado entre sessões)
+- Até **1 laudo PDF** gerado
+- Sem suporte técnico
 
-O arquivo `.apt_lic` contém assinatura criptográfica Ed25519 vinculada à unidade licenciada. A licença é:
+### 2.2 Versão Licenciada
 
-- **Intransferível:** associada à unidade identificada no momento da aquisição
-- **Com prazo de validade:** definido no arquivo de licença
-- **Verificada localmente:** a verificação ocorre 100% offline, sem transmissão de dados
+Ativada mediante arquivo de licença válido (`.apt_lic`):
 
----
-
-## 5. Validade e Renovação
-
-A licença possui data de expiração. Após o vencimento, o Software retorna ao modo gratuito. A renovação deve ser realizada pelo canal oficial: [https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)
+- Processamento de áudio ilimitado
+- Geração ilimitada de laudos PDF
+- Recursos completos conforme o plano adquirido
+- Suporte técnico
 
 ---
 
-## 6. Privacidade e Segurança
+## 3. Concessão de Licença
 
-- O Software não transmite dados de uso, arquivos de áudio ou transcrições para qualquer servidor
-- O arquivo `.apt_lic` não contém dados pessoais além da identificação da unidade licenciada
-- Nenhuma informação de uso é coletada pelo Licenciante
+A licença concedida ao usuário é:
+
+- **Não exclusiva** — pode ser concedida a outros usuários simultaneamente
+- **Intransferível** — vinculada à unidade identificada no arquivo de licença
+- **Temporária** — válida apenas durante o período contratado
+- **Não implica cessão de propriedade intelectual** sobre o software
 
 ---
 
-## 7. Rescisão
+## 4. Ativação e Validação
 
-Este Contrato é rescindido automaticamente, sem aviso prévio, em caso de violação de qualquer das cláusulas. Após a rescisão, o Licenciado deve cessar todo o uso da versão licenciada.
+O acesso às funcionalidades premium depende de um arquivo de licença digital (`.apt_lic`):
+
+- Emitido **exclusivamente pelo Autor**
+- Assinado com **criptografia assimétrica Ed25519** — não pode ser forjado
+- Verificado localmente, sem necessidade de conexão à internet
+- Vinculado à unidade ou organização identificada no momento da aquisição
+
+O software não contém mecanismos para geração de licenças pelo usuário ou por terceiros.
+
+---
+
+## 5. Validade e Expiração
+
+- A licença possui prazo determinado, indicado no arquivo `.apt_lic`
+- Após o vencimento, o software retorna automaticamente à versão gratuita
+- A renovação deve ser feita pelo canal oficial: [https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)
+
+---
+
+## 6. Restrições de Uso
+
+O usuário não poderá, sob nenhuma circunstância:
+
+- Tentar contornar, burlar ou desativar mecanismos de licenciamento
+- Modificar o software com objetivo de liberar funcionalidades premium sem autorização
+- Gerar, utilizar ou distribuir arquivos de licença falsificados ou adulterados
+- Transferir o arquivo `.apt_lic` para terceiros ou outras unidades não autorizadas
+- Utilizar o software para fins ilícitos ou que violem a legislação vigente
+- Comercializar o software sem autorização expressa do Autor
+
+---
+
+## 7. Natureza da Ferramenta
+
+O ApT é uma ferramenta de apoio à transcrição de áudio. Os resultados podem conter imprecisões decorrentes de qualidade de gravação, ruído ambiente, sotaques ou sobreposição de falas.
+
+**Recomenda-se revisão humana antes do uso profissional ou jurídico.**
+
+O software não substitui análise técnica, pericial ou jurídica qualificada.
 
 ---
 
 ## 8. Limitação de Responsabilidade
 
-O Licenciante não se responsabiliza por danos diretos, indiretos, incidentais ou consequentes decorrentes do uso ou da impossibilidade de uso do Software, incluindo, mas não se limitando, à perda de dados ou interrupção de serviços.
+O software é fornecido "no estado em que se encontra", sem garantias de qualquer natureza.
+
+O Autor não se responsabiliza por:
+
+- Imprecisões ou erros nas transcrições geradas
+- Decisões ou interpretações baseadas nos resultados do software
+- Perda de dados ou interrupção de serviço
+- Danos diretos ou indiretos decorrentes do uso ou impossibilidade de uso
 
 ---
 
-## 9. Legislação Aplicável
+## 9. Privacidade e Dados
 
-Este Contrato é regido pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de domicílio do Licenciante para dirimir quaisquer controvérsias.
+O processamento de arquivos ocorre **inteiramente no dispositivo do usuário**. Nenhum arquivo de áudio, transcrição ou dado pessoal é transmitido para servidores externos.
+
+O usuário é responsável por:
+
+- Garantir que o uso dos arquivos processados está em conformidade com a legislação aplicável (incluindo LGPD, Lei 13.709/2018)
+- Observar restrições de sigilo, privacidade e autorização sobre os conteúdos
 
 ---
 
-## 10. Contato
+## 10. Código-Fonte e Licença Comunitária
 
-Para questões sobre este Contrato, licenciamento e suporte:
-[https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)
+Parte do código-fonte está disponível publicamente sob **Apache License 2.0**.
+
+A disponibilização do código-fonte:
+
+- Não concede acesso automático às funcionalidades premium
+- Não autoriza a remoção ou modificação dos mecanismos de licenciamento
+- Não permite uso indevido da marca, nome ou identidade visual do ApT
+
+---
+
+## 11. Atualizações
+
+O software poderá ser atualizado periodicamente, podendo incluir melhorias, correções, novas funcionalidades e ajustes nos mecanismos de licenciamento. O usuário será informado sobre atualizações relevantes.
+
+---
+
+## 12. Alterações neste EULA
+
+Este documento pode ser atualizado a qualquer momento. A versão em vigor é sempre a publicada no repositório oficial. O uso continuado do software após uma atualização implica aceitação dos novos termos.
+
+---
+
+## 13. Legislação Aplicável
+
+Este contrato é regido pelas leis da República Federativa do Brasil, em especial o Código Civil, a Lei de Software (Lei 9.609/1998) e a LGPD (Lei 13.709/2018).
+
+---
+
+## 14. Foro
+
+Fica eleito o foro da comarca do domicílio do Autor para dirimir quaisquer controvérsias oriundas deste contrato.
+
+---
+
+## ☕ Autor
+
+Brunno ML
+[https://www.brunnoml.com.br](https://www.brunnoml.com.br)
