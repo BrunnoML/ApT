@@ -3,6 +3,8 @@
 
 Este documento estabelece os termos e condições para utilização do software **ApT - Áudio para Texto**.
 
+**Este contrato não caracteriza prestação de serviço, mas sim concessão de licença de uso de software.** O Autor não executa processamento em nome do usuário — o software opera integralmente no dispositivo do próprio licenciado, sem dependência de servidores externos ou conexão de rede.
+
 Ao instalar ou utilizar o software, o usuário declara que leu, compreendeu e concorda integralmente com estes termos.
 
 ---
@@ -110,7 +112,7 @@ O Autor não se responsabiliza por:
 
 - Imprecisões ou erros nas transcrições geradas
 - Decisões ou interpretações baseadas nos resultados do software
-- Perda de dados ou interrupção de serviço
+- Perda de dados ou interrupção de funcionamento
 - Danos diretos ou indiretos decorrentes do uso ou impossibilidade de uso
 
 ---

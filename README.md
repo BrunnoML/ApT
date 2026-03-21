@@ -1,11 +1,11 @@
 <h1 align="center">🎙️ ApT - Áudio para Texto</h1>
 
 <p align="center">
-<strong>Transforme horas de áudio em texto pesquisável em minutos.</strong>
+<strong>Software de transcrição de áudio licenciado para uso local.</strong>
 </p>
 
 <p align="center">
-Ideal para profissionais da área jurídica, investigativa e pericial que precisam ganhar produtividade, organizar evidências e gerar laudos prontos para o processo.
+Transforme horas de áudio em texto pesquisável em minutos — ideal para profissionais da área jurídica, investigativa e pericial que precisam ganhar produtividade, organizar evidências e gerar laudos prontos para o processo.
 </p>
 
 <p align="center">
@@ -72,23 +72,24 @@ O ApT é especialmente útil para:
 
 ---
 
-## 🔐 Modalidades de Uso
+## 📄 Modelo de Licenciamento
 
-O ApT segue um modelo **freemium**:
+O ApT é disponibilizado sob **modelo de licenciamento de software**. O Autor concede ao usuário o direito de uso da aplicação — não há prestação de serviço, processamento remoto ou dependência de servidores externos.
+
+A versão comunitária inclui funcionalidades limitadas. Funcionalidades adicionais são habilitadas mediante **licença de uso** adquirida junto ao Autor.
 
 ### 🟢 Versão Gratuita
-- Transcrição de áudio para texto
-- Uso local da aplicação
-- Geração limitada de laudos PDF
+- Transcrição de até **30 minutos** de áudio (acumulado)
+- Geração de até **1 laudo PDF** forense
+- Uso local, sem envio de dados para servidores externos
 
 ### 🔵 Versão Licenciada (Profissional)
-- Geração ilimitada de laudos PDF forenses
+- Transcrição e geração de laudos PDF ilimitados
 - Cadeia de custódia completa em cada laudo
-- Recursos adicionais e personalizações
-- Suporte e atualizações
-- Licença com validade anual
+- Recursos adicionais conforme o plano adquirido
+- Suporte e atualizações durante a vigência da licença
 
-👉 **Conheça os planos e adquira sua licença:**
+👉 **Consulte as modalidades de licença disponíveis:**
 
 🔗 **https://www.brunnoml.com.br/apt**
 
@@ -188,19 +189,21 @@ Configure conforme instruções padrão do Windows.
 
 ## 🔐 Licenciamento
 
-O projeto possui duas camadas de uso:
+O projeto possui duas camadas de licenciamento:
 
 ### 📂 Código-fonte (comunitário)
 
 Disponível sob a **Apache License 2.0**, conforme definido no arquivo [`LICENSE`](LICENSE).
 
-### 💼 Uso profissional
+### 💼 Funcionalidades premium
 
-O uso de funcionalidades avançadas está sujeito a licenciamento, conforme descrito nos arquivos:
+O acesso às funcionalidades avançadas exige licença de uso válida, adquirida junto ao Autor. A disponibilidade do código-fonte não implica acesso automático às funcionalidades licenciadas.
+
+Documentos relevantes:
 
 - [`TERMS.md`](TERMS.md) — Termos de uso
-- [`EULA.md`](EULA.md) — Contrato de licença de usuário final
-- [`PRICING.md`](PRICING.md) — Planos disponíveis
+- [`EULA.md`](EULA.md) — Contrato de licença de usuário final (EULA)
+- [`PRICING.md`](PRICING.md) — Modalidades de licenciamento disponíveis
 
 ---
 

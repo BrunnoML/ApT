@@ -1,8 +1,8 @@
-# 💳 Planos e Licenciamento
+# 💳 Licenciamento
 
-O ApT (Áudio para Texto) é disponibilizado em modelo **freemium**, permitindo uso inicial gratuito e expansão conforme a necessidade do usuário ou instituição.
+O ApT (Áudio para Texto) é disponibilizado sob **modelo de licenciamento de software**, com diferentes modalidades de uso. O Autor concede ao licenciado o direito de utilizar a aplicação localmente — não há prestação de serviço, processamento remoto ou vínculo de fornecimento contínuo.
 
-A solução foi projetada para profissionais que lidam com grandes volumes de áudio e precisam transformar horas de escuta em texto pesquisável, organizando evidências e reduzindo significativamente o tempo de análise.
+A ferramenta foi desenvolvida para profissionais que lidam com grandes volumes de áudio e precisam transformar horas de escuta em texto pesquisável, organizando evidências e reduzindo significativamente o tempo de análise.
 
 ---
 
@@ -45,33 +45,33 @@ Indicado para equipes que precisam padronizar e escalar a produção de laudos.
 
 ---
 
-## 🟣 Plano Institucional
+## 🟣 Licenciamento Institucional
 
 Indicado para órgãos públicos e organizações que precisam de padronização e conformidade em escala.
 
-- Usuários ilimitados dentro da unidade contratante
+- Licença de uso para múltiplos usuários dentro da unidade contratante
 - Padronização de documentos e fluxos institucionais — laudos com identidade visual do órgão
 - Conformidade com a Lei 13.964/2019 em toda a produção documental da unidade
 - Automação do processo que antes dependia de digitação manual ou terceirização
-- Possibilidade de customizações conforme necessidade do órgão
+- As licenças institucionais podem incluir condições específicas de uso, quantidade de usuários e personalizações, conforme definido no ato da contratação
 
 👉 Ideal para secretarias, delegacias regionais, ministério público, defensorias e órgãos estaduais ou federais.
 
 ---
 
-## ⚫ Plano Customizado
+## ⚫ Licenciamento Customizado
 
-Soluções sob medida para necessidades específicas.
+Para necessidades que exigem adaptações específicas.
 
-- Integrações com sistemas existentes
-- Adaptações específicas de fluxo de trabalho
-- Projetos personalizados
+- Licenciamento para integrações com sistemas existentes
+- Adaptações de fluxo de trabalho sob medida
+- Condições negociadas diretamente com o Autor
 
 ---
 
-## 🔗 Contratação
+## 🔗 Aquisição de Licença
 
-Para consultar valores atualizados e adquirir uma licença:
+Para consultar valores e adquirir uma licença de uso:
 
 👉 https://www.brunnoml.com.br/apt
 
@@ -81,4 +81,4 @@ Para consultar valores atualizados e adquirir uma licença:
 
 - Os valores não são exibidos neste repositório para permitir flexibilidade comercial e institucional.
 - A versão gratuita possui limitações e é destinada à avaliação da ferramenta.
-- O uso profissional completo está sujeito a licenciamento.
+- O uso das funcionalidades completas está sujeito à aquisição de licença de uso válida.

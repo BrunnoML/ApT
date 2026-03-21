@@ -3,6 +3,8 @@
 **Versão:** 1.0
 **Vigência:** Março de 2026
 
+Este documento regula o uso do software ApT, disponibilizado sob **modelo de licenciamento de software**. O Autor não presta serviço ao usuário — concede o direito de uso da aplicação, que opera integralmente no dispositivo do próprio usuário.
+
 ---
 
 ## 1. Aceitação dos Termos
@@ -47,30 +49,38 @@ O autor do Software não assume responsabilidade por laudos utilizados em proces
 
 ---
 
-## 5. Ausência de Garantias
+## 5. Natureza do Licenciamento
+
+O ApT é um **software licenciado para uso local**. O Autor concede ao usuário o direito de utilizar a aplicação no seu próprio dispositivo — esta relação **não constitui prestação de serviço**, não implica fornecimento contínuo nem cria qualquer vínculo de obrigação de resultado por parte do Autor.
+
+O software opera de forma autônoma no ambiente do usuário. O Autor não monitora, não acessa e não interfere nas operações realizadas pelo usuário.
+
+---
+
+## 6. Ausência de Garantias
 
 O Software é fornecido "no estado em que se encontra" (*as is*), sem garantias de qualquer natureza, expressas ou implícitas, incluindo, sem limitação, garantias de comercialização, adequação a uma finalidade específica ou não violação.
 
 ---
 
-## 6. Uso Institucional
+## 7. Uso Institucional
 
 O uso do Software em ambientes institucionais — incluindo órgãos públicos, forças de segurança, escritórios de advocacia e empresas — deve observar:
 
 - As políticas internas de segurança da informação e compliance da organização
 - A legislação aplicável, em especial a LGPD (Lei 13.709/2018) e as normas de cadeia de custódia digital (Lei 13.964/2019)
-- Os termos do plano de licença contratado, quando aplicável
+- Os termos da licença de uso contratada, quando aplicável
 
 O Autor não se responsabiliza pelo descumprimento de normas internas ou regulatórias por parte da organização usuária.
 
 ---
 
-## 7. Versão Licenciada (Premium)
+## 8. Versão Licenciada (Premium)
 
-O uso da versão licenciada do ApT está sujeito ao **Contrato de Licença de Usuário Final (EULA)**, disponível no arquivo `EULA.md`. A versão licenciada requer a aquisição de uma licença individual ou institucional válida.
+O uso da versão licenciada do ApT está sujeito ao **Contrato de Licença de Usuário Final (EULA)**, disponível no arquivo `EULA.md`. A versão licenciada requer a aquisição de uma licença de uso individual ou institucional válida.
 
 ---
 
-## 8. Contato
+## 9. Contato
 
 Dúvidas sobre estes termos: [https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)
