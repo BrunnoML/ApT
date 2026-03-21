@@ -1,11 +1,11 @@
 <h1 align="center">🎙️ ApT - Áudio para Texto</h1>
 
 <p align="center">
-Transforme áudios em texto de forma rápida, organizada e profissional.
+<strong>Transforme horas de áudio em texto pesquisável em minutos.</strong>
 </p>
 
 <p align="center">
-Ferramenta ideal para profissionais da área jurídica, investigativa e pericial.
+Ideal para profissionais da área jurídica, investigativa e pericial que precisam ganhar produtividade, organizar evidências e gerar laudos prontos para o processo.
 </p>
 
 <p align="center">
@@ -16,23 +16,35 @@ Ferramenta ideal para profissionais da área jurídica, investigativa e pericial
   <a href="#-licenciamento">Licenciamento</a>
 </p>
 
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Apache-2.0&color=49AA26&labelColor=000000">
+</p>
+
+<p align="center">
+  <strong>⚖️ Licenciamento duplo:</strong> código comunitário sob Apache 2.0 &nbsp;|&nbsp; funcionalidades premium regidas por <a href="EULA.md">EULA próprio</a>
+</p>
+
 ---
 
 <p align="center">
   <img alt="ApT" src="/images/preview.png" width="500px">
 </p>
 
+<p align="center">
+  🔒 <strong>Processamento 100% local</strong> — seus arquivos de áudio nunca saem do seu dispositivo.
+</p>
+
 ---
 
 ## ⚖️ Sobre o ApT
 
-O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada.
+O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada, com geração de **laudo PDF forense** e preservação da cadeia de custódia conforme a Lei 13.964/2019.
 
-Foi desenvolvido inicialmente para atender demandas reais de análise de grandes volumes de áudio, permitindo:
+Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
-- localizar rapidamente trechos relevantes
-- organizar informações para investigação ou estudo
-- otimizar o tempo de trabalho
+- Substituir horas de escuta manual por texto pesquisável em minutos
+- Localizar trechos relevantes por palavra-chave, sem ouvir arquivo por arquivo
+- Gerar laudos prontos para juntada ao processo, com hash SHA-256 e conformidade legal
 
 ---
 
@@ -76,9 +88,9 @@ O ApT segue um modelo **freemium**:
 - Suporte e atualizações
 - Licença com validade anual
 
-👉 Para saber mais sobre os planos e adquirir uma licença:
+👉 **Conheça os planos e adquira sua licença:**
 
-🔗 https://www.brunnoml.com.br/apt
+🔗 **https://www.brunnoml.com.br/apt**
 
 ---
 

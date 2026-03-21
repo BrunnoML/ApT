@@ -1,3 +1,35 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AVISO SOBRE LICENCIAMENTO DUPLO — ApT (Áudio para Texto)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Este projeto possui duas camadas de licenciamento:
+
+  1. CÓDIGO COMUNITÁRIO — regido pela Apache License 2.0 (abaixo).
+     Aplica-se ao código-fonte disponível publicamente neste repositório.
+
+  2. FUNCIONALIDADES PREMIUM — regidas por EULA próprio (EULA.md).
+     O acesso às funcionalidades avançadas exige licença válida adquirida
+     junto ao autor. A disponibilidade do código-fonte não implica acesso
+     automático às funcionalidades premium.
+
+Resumo informativo em português (a versão inglesa abaixo é a única
+legalmente vinculante):
+
+  - Você PODE usar, copiar, modificar e redistribuir o código comunitário,
+    inclusive para fins comerciais, desde que mantenha os avisos de
+    atribuição e indique as modificações realizadas.
+  - Você NÃO PODE usar a marca "ApT", logotipo ou identidade visual sem
+    autorização prévia do autor.
+  - Você NÃO PODE remover ou contornar os mecanismos de licenciamento
+    premium, mesmo em obras derivadas.
+  - O software é fornecido sem garantias de qualquer natureza.
+
+Copyright 2026 BrunnoML — https://www.brunnoml.com.br
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+APACHE LICENSE 2.0 (texto oficial — versão vinculante)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
