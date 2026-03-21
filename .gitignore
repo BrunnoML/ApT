@@ -5,3 +5,6 @@ CLAUDE.md
 docs/
 .apt_license
 *.apt_lic
+__pycache__/
+*.pyc
+*.pyo
