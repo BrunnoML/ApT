@@ -1,95 +1,83 @@
-# Planos e Licenciamento — ApT (Áudio para Texto)
+# 💳 Planos e Licenciamento
 
-O **ApT — Áudio para Texto** adota um modelo **freemium**: há uma versão gratuita disponível para todos e versões licenciadas para uso profissional e institucional, com recursos completos e suporte dedicado.
+O ApT (Áudio para Texto) é disponibilizado em modelo **freemium**, permitindo uso inicial gratuito e expansão conforme a necessidade do usuário ou instituição.
 
-Esta página descreve os planos disponíveis. Para consultar valores e adquirir uma licença, acesse o site oficial:
-
-> **[https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)**
+A solução foi projetada para profissionais que lidam com grandes volumes de áudio e precisam transformar informação em texto de forma rápida, organizada e pesquisável.
 
 ---
 
-## Versão Gratuita
+## 🟢 Plano Gratuito
 
-Disponível para qualquer usuário, sem necessidade de cadastro ou licença.
+Indicado para testes e uso inicial.
 
-**Indicada para:** testes, uso eventual, estudantes e profissionais que desejam avaliar a ferramenta antes de adquirir uma licença.
+- Transcrição de arquivos de áudio para texto
+- Uso local da aplicação
+- Geração limitada de laudos/relatórios
+- Interface completa para avaliação da ferramenta
 
-| Recurso | Disponibilidade |
-|---|---|
-| Transcrição de áudio (modelos base, medium, large) | Ilimitada |
-| Exportação em texto (.txt) | Ilimitada |
-| Geração de laudo PDF com cadeia de custódia | 1 laudo por instalação |
-| Hash SHA-256 do áudio e do laudo | Incluído |
-| Processamento 100% local | Incluído |
-| Suporte | Comunidade (GitHub Issues) |
+👉 Ideal para conhecer o sistema antes de evoluir para uso profissional.
 
 ---
 
-## Plano Individual
+## 🟡 Plano Individual
 
-Para profissionais liberais que atuam de forma autônoma: advogados, peritos, tradutores juramentados, assistentes técnicos e demais profissionais que produzem laudos de forma independente.
+Indicado para profissionais que utilizam a ferramenta no dia a dia.
 
-| Recurso | Disponibilidade |
-|---|---|
-| Todos os recursos da versão gratuita | Incluído |
-| Geração ilimitada de laudos PDF forenses | Incluído |
-| Cadeia de custódia completa em cada laudo | Incluído |
-| Atualizações durante o período da licença | Incluído |
-| Suporte técnico por e-mail | Incluído |
-| Licença nominal (1 usuário, até 2 dispositivos) | Incluído |
+- Geração ampliada de laudos e relatórios
+- Maior produtividade na análise de áudio
+- Uso contínuo sem limitações da versão gratuita
+- Atualizações do sistema
+
+👉 Ideal para advogados, peritos e profissionais autônomos.
 
 ---
 
-## Plano Profissional / Unidade
+## 🔵 Plano Profissional / Unidade
 
-Para equipes de pequeno porte, delegacias, batalhões, escritórios de advocacia, núcleos de perícia e unidades de inteligência que necessitam de uso compartilhado.
+Indicado para equipes pequenas ou setores.
 
-| Recurso | Disponibilidade |
-|---|---|
-| Todos os recursos do Plano Individual | Incluído |
-| Licença para até 5 usuários da mesma unidade | Incluído |
-| Identificação da unidade no laudo | Incluído |
-| Prioridade no suporte técnico | Incluído |
-| Acesso antecipado a novas funcionalidades | Incluído |
+- Uso por múltiplos usuários
+- Padronização de geração de laudos
+- Recursos completos da aplicação
+- Atualizações e suporte
 
----
-
-## Plano Institucional
-
-Para órgãos públicos, secretarias, delegacias regionais, Ministério Público, defensorias, escritórios de advocacia de médio e grande porte e empresas que necessitam de implantação em escala.
-
-| Recurso | Disponibilidade |
-|---|---|
-| Todos os recursos do Plano Profissional | Incluído |
-| Usuários ilimitados na unidade identificada | Incluído |
-| Logotipo institucional no cabeçalho do laudo | Incluído |
-| Personalização de campos do laudo | Incluído |
-| Suporte técnico dedicado | Incluído |
-| Treinamento para equipe | Sob consulta |
+👉 Ideal para delegacias, escritórios de advocacia e núcleos especializados.
 
 ---
 
-## Plano Customizado
+## 🟣 Plano Institucional
 
-Para projetos de maior escala, integrações com outros sistemas ou necessidades específicas de órgãos estaduais e federais.
+Indicado para órgãos públicos e organizações de maior porte.
 
-Exemplos de casos de uso:
+- Uso em escala institucional
+- Personalização de laudos (ex: logotipo do órgão)
+- Padronização de documentos
+- Possibilidade de customizações
 
-- Integração com sistemas de gestão processual
-- Implantação em infraestrutura de segurança pública estadual
-- Adaptação do laudo forense a modelos institucionais específicos
-- Processamento em lote de grandes volumes de áudio
-
-Entre em contato para apresentação técnica e proposta comercial personalizada.
+👉 Ideal para órgãos estaduais, federais e grandes estruturas operacionais.
 
 ---
 
-## Adquira sua Licença
+## ⚫ Plano Customizado
 
-Para consultar valores, condições de contratação e adquirir uma licença:
+Soluções sob medida para necessidades específicas.
 
-**[https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)**
+- Integrações com sistemas existentes
+- Adaptações específicas de fluxo de trabalho
+- Projetos personalizados
 
 ---
 
-*Os planos e funcionalidades descritos neste documento estão sujeitos a alterações. Consulte sempre o site oficial para informações atualizadas.*
+## 🔗 Contratação
+
+Para consultar valores atualizados e adquirir uma licença:
+
+👉 https://www.brunnoml.com.br/apt
+
+---
+
+## 📌 Observações
+
+- Os valores não são exibidos neste repositório para permitir flexibilidade comercial e institucional.
+- A versão gratuita possui limitações e é destinada à avaliação da ferramenta.
+- O uso profissional completo está sujeito a licenciamento.
