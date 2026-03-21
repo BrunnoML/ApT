@@ -10,10 +10,10 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
 
 <p align="center">
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-modalidades-de-uso">Modalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-modelo-de-licenciamento">Licenciamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licenciamento">Licenciamento</a>
+  <a href="#-licenciamento">Código Aberto</a>
 </p>
 
 <p align="center">
@@ -38,13 +38,13 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
 
 ## ⚖️ Sobre o ApT
 
-O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada, com geração de **laudo PDF forense** e preservação da cadeia de custódia conforme a Lei 13.964/2019.
+O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada, com geração de **laudo PDF forense** e elementos voltados à documentação da cadeia de custódia do material processado.
 
 Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
 - Substituir horas de escuta manual por texto pesquisável em minutos
 - Localizar trechos relevantes por palavra-chave, sem ouvir arquivo por arquivo
-- Gerar laudos prontos para juntada ao processo, com hash SHA-256 e conformidade legal
+- Gerar laudos prontos para juntada ao processo, com hash SHA-256 e documentação técnica do material processado
 
 ---
 
@@ -87,9 +87,9 @@ A versão comunitária inclui funcionalidades limitadas. Funcionalidades adicion
 - Transcrição e geração de laudos PDF ilimitados
 - Cadeia de custódia completa em cada laudo
 - Recursos adicionais conforme o plano adquirido
-- Suporte e atualizações durante a vigência da licença
+- Acesso a atualizações e suporte associado à licença, durante sua vigência
 
-👉 **Consulte as modalidades de licença disponíveis:**
+👉 **Consulte as modalidades de licenciamento de uso disponíveis:**
 
 🔗 **https://www.brunnoml.com.br/apt**
 
@@ -128,7 +128,7 @@ Ative:
 
 **Windows**
 
-```bash
+```
 .venv\Scripts\activate
 ```
 
