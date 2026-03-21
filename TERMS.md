@@ -21,6 +21,8 @@ A versão comunitária do ApT é distribuída sob a **Apache License, Version 2.
 
 A íntegra da Licença está disponível no arquivo `LICENSE` neste repositório e em [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
+O uso da marca, nome **ApT**, logotipo ou qualquer elemento de identidade visual do Software sem autorização prévia e expressa do autor não é permitido, mesmo em obras derivadas distribuídas sob a Apache License 2.0.
+
 ---
 
 ## 3. Processamento Local e Privacidade
@@ -41,6 +43,8 @@ O ApT é uma **ferramenta de auxílio técnico**. A responsabilidade pela valida
 
 O autor do Software não assume responsabilidade por laudos utilizados em processos judiciais sem revisão e assinatura de profissional habilitado.
 
+**O ApT é uma ferramenta de apoio e não substitui análise técnica, jurídica ou pericial qualificada.** Os resultados gerados podem conter imprecisões e devem ser revisados por profissional competente antes de qualquer uso oficial.
+
 ---
 
 ## 5. Ausência de Garantias
@@ -49,12 +53,24 @@ O Software é fornecido "no estado em que se encontra" (*as is*), sem garantias 
 
 ---
 
-## 6. Versão Licenciada (Premium)
+## 6. Uso Institucional
+
+O uso do Software em ambientes institucionais — incluindo órgãos públicos, forças de segurança, escritórios de advocacia e empresas — deve observar:
+
+- As políticas internas de segurança da informação e compliance da organização
+- A legislação aplicável, em especial a LGPD (Lei 13.709/2018) e as normas de cadeia de custódia digital (Lei 13.964/2019)
+- Os termos do plano de licença contratado, quando aplicável
+
+O Autor não se responsabiliza pelo descumprimento de normas internas ou regulatórias por parte da organização usuária.
+
+---
+
+## 7. Versão Licenciada (Premium)
 
 O uso da versão licenciada do ApT está sujeito ao **Contrato de Licença de Usuário Final (EULA)**, disponível no arquivo `EULA.md`. A versão licenciada requer a aquisição de uma licença individual ou institucional válida.
 
 ---
 
-## 7. Contato
+## 8. Contato
 
 Dúvidas sobre estes termos: [https://www.brunnoml.com.br/apt](https://www.brunnoml.com.br/apt)
