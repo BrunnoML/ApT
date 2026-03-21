@@ -21,28 +21,27 @@ Ao instalar ou utilizar o software, o usuário declara que leu, compreendeu e co
 
 ## 2. Modalidades de Uso
 
-O software é disponibilizado em modelo **freemium**:
+O software é disponibilizado com diferentes modalidades de licenciamento:
 
 ### 2.1 Versão Gratuita
 
 Permite avaliação do software com as seguintes limitações:
 
 - Até **30 minutos** de áudio processado (acumulado entre sessões)
-- Até **1 laudo PDF** gerado
-- Sem suporte técnico
+- Até **1 laudo** técnico em formato PDF gerado
 
 ### 2.2 Versão Licenciada
 
 Ativada mediante arquivo de licença válido (`.apt_lic`):
 
 - Processamento de áudio ilimitado
-- Geração ilimitada de laudos PDF
-- Recursos completos conforme o plano adquirido
-- Suporte técnico
+- Geração ilimitada de laudos técnicos em formato PDF
+- Recursos completos conforme a licença adquirida
+- Acesso a atualizações e suporte relacionado ao uso da licença, durante sua vigência
 
-### 2.3 Licenças Institucionais
+### 2.3 Licenças para Outros Casos
 
-Licenças destinadas a órgãos públicos, empresas ou organizações de maior porte podem possuir condições específicas de uso, incluindo número de usuários autorizados, abrangência organizacional e personalizações, conforme definido no ato da contratação. Prevalece sobre esta cláusula o que estiver expressamente acordado entre o Autor e a instituição contratante.
+Licenças destinadas a equipes ou organizações podem possuir condições específicas de uso, conforme definido no ato da contratação. Prevalece sobre esta cláusula o que estiver expressamente acordado entre o Autor e o licenciado.
 
 ---
 

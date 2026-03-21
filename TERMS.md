@@ -77,7 +77,7 @@ O Autor não se responsabiliza pelo descumprimento de normas internas ou regulat
 
 ## 8. Versão Licenciada (Premium)
 
-O uso da versão licenciada do ApT está sujeito ao **Contrato de Licença de Usuário Final (EULA)**, disponível no arquivo `EULA.md`. A versão licenciada requer a aquisição de uma licença de uso individual ou institucional válida.
+O uso da versão licenciada do ApT está sujeito ao **Contrato de Licença de Usuário Final (EULA)**, disponível no arquivo `EULA.md`. A versão licenciada requer a aquisição de uma licença de uso válida.
 
 ---
 

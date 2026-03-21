@@ -10,10 +10,10 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
 
 <p align="center">
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-modelo-de-licenciamento">Licenciamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licenciamento">Licenciamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licenciamento">Código Aberto</a>
+  <a href="#-licenciamento-1">Código Aberto</a>
 </p>
 
 <p align="center">
@@ -67,27 +67,29 @@ O ApT é especialmente útil para:
 - Processamento de múltiplos arquivos em lote
 - Seleção de modelos Whisper (`base`, `medium`, `large`)
 - Exportação de transcrições em `.txt`
-- Geração de **laudo PDF forense** com cadeia de custódia (hash SHA-256)
+- Geração de **laudo técnico em formato PDF** com cadeia de custódia (hash SHA-256)
 - Organização por pastas de entrada e saída
 
 ---
 
-## 📄 Modelo de Licenciamento
+## 📄 Licenciamento
 
 O ApT é disponibilizado sob **modelo de licenciamento de software**. O Autor concede ao usuário o direito de uso da aplicação — não há prestação de serviço, processamento remoto ou dependência de servidores externos.
 
 A versão comunitária inclui funcionalidades limitadas. Funcionalidades adicionais são habilitadas mediante **licença de uso** adquirida junto ao Autor.
 
+O software é executado integralmente no ambiente do usuário, sem dependência de infraestrutura externa mantida pelo autor.
+
 ### 🟢 Versão Gratuita
 - Transcrição de até **30 minutos** de áudio (acumulado)
-- Geração de até **1 laudo PDF** forense
+- Geração de até **1 laudo** técnico em formato PDF
 - Uso local, sem envio de dados para servidores externos
 
 ### 🔵 Versão Licenciada (Profissional)
 - Transcrição e geração de laudos PDF ilimitados
 - Cadeia de custódia completa em cada laudo
-- Recursos adicionais conforme o plano adquirido
-- Acesso a atualizações e suporte associado à licença, durante sua vigência
+- Recursos adicionais conforme a licença adquirida
+- Acesso a atualizações e suporte relacionado ao uso da licença, durante sua vigência
 
 👉 **Consulte as modalidades de licenciamento de uso disponíveis:**
 
