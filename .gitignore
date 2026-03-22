@@ -18,3 +18,5 @@ dist/
 
 # Claude Code
 .claude/
+# Inno Setup output
+installer/
