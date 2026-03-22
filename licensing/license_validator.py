@@ -29,7 +29,7 @@ from datetime import date
 #   python scripts/gerar_chaves.py   (repositório privado)
 # ─────────────────────────────────────────────────────────────
 _PUBLIC_KEY_PEM = b"""-----BEGIN PUBLIC KEY-----
-PLACEHOLDER_SUBSTITUA_PELA_CHAVE_PUBLICA_REAL_APOS_GERAR_O_PAR
+MCowBQYDK2VwAyEADmSnlqZqSrvKPw+WF46SJCsXvSzT/E0bP+KwZHwezZ4=
 -----END PUBLIC KEY-----"""
 
 _CHAVE_PUBLICA_CONFIGURADA = b"PLACEHOLDER" not in _PUBLIC_KEY_PEM

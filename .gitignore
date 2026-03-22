@@ -8,3 +8,10 @@ docs/
 __pycache__/
 *.pyc
 *.pyo
+
+# FFmpeg binários (não versionar — baixar de gyan.dev)
+ffmpeg/
+
+# PyInstaller output
+build/
+dist/

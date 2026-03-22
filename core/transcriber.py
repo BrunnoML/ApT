@@ -10,6 +10,7 @@ Callbacks esperados:
   error_callback(msg: str) -> None
 """
 import os
+from datetime import datetime
 from typing import Callable
 
 import whisper
@@ -103,6 +104,13 @@ def transcrever_arquivos(
         hash_arquivo = calcular_hash(audio_path)
         duracao = obter_duracao(audio_path)
 
+        # Data de modificação do arquivo (reflete criação/recebimento no dispositivo original)
+        try:
+            mtime = os.path.getmtime(audio_path)
+            data_arquivo = datetime.fromtimestamp(mtime).strftime("%d/%m/%Y %H:%M:%S")
+        except Exception:
+            data_arquivo = "não disponível"
+
         try:
             result = model.transcribe(audio_path)
             texto = result["text"]
@@ -112,6 +120,7 @@ def transcrever_arquivos(
         with open(output_file, "a", encoding="utf-8") as f:
             f.write(f"\n{'=' * 60}\n")
             f.write(f"Arquivo : {filename}\n")
+            f.write(f"Data    : {data_arquivo}\n")
             f.write(f"Hash    : {hash_arquivo}\n")
             f.write(f"Duração : {duracao}\n")
             f.write(f"{'=' * 60}\n")
@@ -119,6 +128,7 @@ def transcrever_arquivos(
 
         arquivos_dados.append({
             "nome": filename,
+            "data": data_arquivo,
             "hash": hash_arquivo,
             "duracao": duracao,
             "segundos": seg,
@@ -144,11 +154,22 @@ def transcrever_arquivos(
             caminho_pdf, hash_pdf = gerar_laudo_pdf(
                 output_path, unidade, responsavel, model_name, arquivos_dados
             )
+            # Registra hash do PDF ao final de transcricoes.txt para consulta futura
+            agora_str = datetime.now().strftime("%d/%m/%Y às %H:%M:%S")
+            with open(output_file, "a", encoding="utf-8") as f:
+                f.write(f"\n{'=' * 60}\n")
+                f.write(f"INTEGRIDADE DO RELATÓRIO PDF\n")
+                f.write(f"{'=' * 60}\n")
+                f.write(f"Arquivo     : {os.path.basename(caminho_pdf)}\n")
+                f.write(f"Hash SHA-256: {hash_pdf}\n")
+                f.write(f"Gerado em   : {agora_str}\n")
+                f.write(f"{'=' * 60}\n")
             msg = (
                 f"Transcrição finalizada!\n\n"
-                f"Arquivo TXT: transcricoes.txt\n"
-                f"Laudo PDF: {os.path.basename(caminho_pdf)}\n\n"
-                f"Hash SHA-256 do laudo:\n{hash_pdf}"
+                f"Arquivos gerados:\n"
+                f"  • transcricoes.txt\n"
+                f"  • {os.path.basename(caminho_pdf)}\n\n"
+                f"Hash SHA-256 do relatório:\n{hash_pdf}"
                 + aviso_pulados
             )
             done_callback(msg, caminho_pdf, hash_pdf)

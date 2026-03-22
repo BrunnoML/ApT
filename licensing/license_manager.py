@@ -133,14 +133,14 @@ def get_status_licenca() -> dict:
     seg_rest_mod = seg_rest % 60
 
     if laudos_rest <= 0 and seg_rest <= 0:
-        mensagem = "Versão gratuita — limites atingidos. Adquira a licença."
+        mensagem = "Licença Gratuita — limites atingidos. Adquira a licença."
     elif laudos_rest <= 0:
-        mensagem = f"Versão gratuita — laudo já utilizado | {min_rest:02d}:{seg_rest_mod:02d} de áudio restantes"
+        mensagem = f"Licença Gratuita — laudo já utilizado | {min_rest:02d}:{seg_rest_mod:02d} de áudio restantes"
     elif seg_rest <= 0:
-        mensagem = f"Versão gratuita — limite de áudio atingido | {laudos_rest} laudo(s) disponível(is)"
+        mensagem = f"Licença Gratuita — limite de áudio atingido | {laudos_rest} laudo(s) disponível(is)"
     else:
         mensagem = (
-            f"Versão gratuita — {laudos_rest} laudo(s) | "
+            f"Licença Gratuita — {laudos_rest} laudo(s) | "
             f"{min_rest:02d}:{seg_rest_mod:02d} de áudio restantes"
         )
 
