@@ -1,5 +1,28 @@
 import os
 import sys
+import subprocess
+
+
+def _suprimir_janela_subprocess() -> None:
+    """
+    Em apps PyInstaller sem console (console=False), cada subprocess filho
+    (ex: FFmpeg chamado pelo Whisper) abre e fecha um terminal rapidamente.
+    Esse patch garante CREATE_NO_WINDOW em todos os subprocess no Windows.
+    """
+    if sys.platform != "win32":
+        return
+    _orig = subprocess.Popen.__init__
+
+    def _patched(self, args, **kwargs):
+        kwargs.setdefault("creationflags", 0)
+        kwargs["creationflags"] |= subprocess.CREATE_NO_WINDOW
+        _orig(self, args, **kwargs)
+
+    subprocess.Popen.__init__ = _patched
+
+
+# Aplica imediatamente ao ser importado (antes de qualquer outro import)
+_suprimir_janela_subprocess()
 
 
 def configurar_ffmpeg() -> None:

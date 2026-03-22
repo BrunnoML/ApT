@@ -67,6 +67,9 @@ def transcrever_arquivos(
         )
         return
 
+    tamanhos = {"tiny": "39 MB", "base": "74 MB", "small": "244 MB", "medium": "769 MB", "large": "1,5 GB"}
+    tam = tamanhos.get(model_name, "")
+    progress_callback(0, total, f"Carregando modelo '{model_name}' {tam}… (1ª execução: faz download automático)")
     try:
         model = whisper.load_model(model_name)
     except Exception as e:
