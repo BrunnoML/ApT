@@ -18,6 +18,9 @@ dist/
 
 # Claude Code
 .claude/
+
+# Script de build privado (requer apt-privado)
+build_release.bat
 # Inno Setup output
 installer/
 _obf_build/
