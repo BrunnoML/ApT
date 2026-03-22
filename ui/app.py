@@ -41,7 +41,7 @@ class AptApp(ctk.CTk):
         # Variáveis de controle
         self._input_path = ctk.StringVar()
         self._output_path = ctk.StringVar()
-        self._model_var = ctk.StringVar(value="large")
+        self._model_var = ctk.StringVar(value="base")
         self._unidade_var = ctk.StringVar()
         self._responsavel_var = ctk.StringVar()
         self._gerar_pdf_var = ctk.BooleanVar(value=True)
@@ -119,13 +119,19 @@ class AptApp(ctk.CTk):
             row=0, column=0, columnspan=3, sticky="w", padx=8, pady=(6, 2)
         )
         for col, (valor, texto) in enumerate([
-            ("base", "base — rápido"),
+            ("base", "base — rápido ⭐ recomendado"),
             ("medium", "medium — equilibrado"),
-            ("large", "large — melhor qualidade ⭐"),
+            ("large", "large — áudios difíceis"),
         ]):
             ctk.CTkRadioButton(
                 frame_modelo, text=texto, variable=self._model_var, value=valor
-            ).grid(row=1, column=col, padx=10, pady=(2, 8), sticky="w")
+            ).grid(row=1, column=col, padx=10, pady=(2, 4), sticky="w")
+        ctk.CTkLabel(
+            frame_modelo,
+            text="Dica: use base para a maioria dos casos. Troque para large apenas se a transcrição precisar de correções.",
+            font=ctk.CTkFont(size=11),
+            text_color="gray60",
+        ).grid(row=2, column=0, columnspan=3, sticky="w", padx=8, pady=(0, 8))
 
         # ── Relatório de Transcrição ──
         frame_laudo = ctk.CTkFrame(self)
