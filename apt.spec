@@ -122,7 +122,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=str(ROOT / "images" / "apt_text.ico"),
+    icon=str(ROOT / "images" / "apt.ico"),
     version_file=None,
 )
 

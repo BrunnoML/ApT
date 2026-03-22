@@ -199,7 +199,7 @@ class AptApp(ctk.CTk):
     def _carregar_icone(self) -> None:
         base_dir = os.path.dirname(os.path.abspath(__file__))
         images_dir = os.path.normpath(os.path.join(base_dir, "..", "images"))
-        ico_path = os.path.join(images_dir, "apt_text.ico")   # ícone texto p/ janela/taskbar
+        ico_path = os.path.join(images_dir, "apt.ico")   # ícone janela/taskbar
         png_path = os.path.join(images_dir, "app_icon.png")   # fallback não-Windows
 
         if platform.system() == "Windows":
