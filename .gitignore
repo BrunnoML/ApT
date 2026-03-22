@@ -20,3 +20,4 @@ dist/
 .claude/
 # Inno Setup output
 installer/
+_obf_build/
