@@ -89,10 +89,9 @@ Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
 ### 👤 Usuário final (recomendado)
 
-1. Acesse a [página de releases](https://github.com/BrunnoML/ApT/releases/tag/v1.0.0)
-2. Baixe `ApT-v1.0.0-win64.zip`
-3. Extraia em qualquer pasta
-4. Execute `ApT.exe`
+1. Baixe o instalador: **[ApT-Setup-v1.0.0.exe](https://github.com/BrunnoML/ApT/releases/download/v1.0.0/ApT-Setup-v1.0.0.exe)** (194 MB)
+2. Execute o instalador e siga os passos
+3. Abra o ApT pelo Menu Iniciar
 
 > **Modelos Whisper** são baixados automaticamente na primeira execução de cada modelo:
 > `base` ≈ 74 MB · `medium` ≈ 769 MB · `large` ≈ 1,5 GB
