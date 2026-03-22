@@ -48,7 +48,7 @@ a = Analysis(
            (str(FFMPEG_BIN / "ffprobe.exe"), "ffmpeg/bin"),
            (str(FFMPEG_BIN / "ffplay.exe"), "ffmpeg/bin")] if has_ffmpeg else []),
         # Assets do CustomTkinter (temas e fontes)
-        ("customtkinter", "customtkinter"),
+        (str(ROOT / ".venv" / "Lib" / "site-packages" / "customtkinter"), "customtkinter"),
     ],
     hiddenimports=[
         # Whisper
