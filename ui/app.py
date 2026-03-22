@@ -170,7 +170,17 @@ class AptApp(ctk.CTk):
         self._label_status_lic = ctk.CTkLabel(
             frame_lic, text="", font=ctk.CTkFont(size=11)
         )
-        self._label_status_lic.grid(row=2, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 8))
+        self._label_status_lic.grid(row=2, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 2))
+
+        # Código da máquina — necessário para solicitar licença
+        from licensing.machine_id import get_machine_id_display
+        machine_code = get_machine_id_display()
+        ctk.CTkLabel(
+            frame_lic,
+            text=f"Código da máquina: {machine_code}",
+            font=ctk.CTkFont(size=10),
+            text_color="#6B7280",
+        ).grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 6))
 
         # ── Progresso ──
         self._progress_bar = ctk.CTkProgressBar(self, width=500)

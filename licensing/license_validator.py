@@ -68,6 +68,13 @@ def verificar_licenca(caminho_lic: str) -> tuple[bool, str, dict]:
     if ausentes:
         return False, f"Campos ausentes no arquivo de licença: {ausentes}", {}
 
+    # Vinculação de máquina — se o campo existir na licença, deve coincidir
+    if "machine_id" in dados:
+        from licensing.machine_id import get_machine_id_display
+        current = get_machine_id_display().replace("-", "").lower()
+        if dados["machine_id"] != current:
+            return False, "Licença vinculada a outra máquina. Solicite uma nova licença.", {}
+
     sig_b64 = dados.get("sig", "")
 
     try:
