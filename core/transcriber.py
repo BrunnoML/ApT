@@ -9,7 +9,9 @@ Callbacks esperados:
   done_callback(msg: str, pdf_path: str | None, hash_pdf: str | None) -> None
   error_callback(msg: str) -> None
 """
+import io
 import os
+import sys
 from datetime import datetime
 from typing import Callable
 
@@ -70,11 +72,20 @@ def transcrever_arquivos(
     tamanhos = {"tiny": "39 MB", "base": "74 MB", "small": "244 MB", "medium": "769 MB", "large": "1,5 GB"}
     tam = tamanhos.get(model_name, "")
     progress_callback(0, total, f"Carregando modelo '{model_name}' {tam}… (1ª execução: faz download automático)")
+    # sys.stdout/stderr são None em apps PyInstaller sem console.
+    # O tqdm do Whisper trava ao tentar escrever o progresso do download.
+    _stdout, _stderr = sys.stdout, sys.stderr
+    if sys.stdout is None:
+        sys.stdout = io.StringIO()
+    if sys.stderr is None:
+        sys.stderr = io.StringIO()
     try:
         model = whisper.load_model(model_name)
     except Exception as e:
         error_callback(f"Erro ao carregar modelo Whisper '{model_name}': {e}")
         return
+    finally:
+        sys.stdout, sys.stderr = _stdout, _stderr
 
     output_file = os.path.join(output_path, "transcricoes.txt")
     try:
