@@ -11,7 +11,7 @@ O software é executado integralmente no ambiente do usuário, sem dependência 
 Indicada para **avaliação da ferramenta**, com as seguintes limitações:
 
 - Transcrição de até **30 minutos** de áudio (acumulado entre sessões)
-- Geração de até **1 laudo** técnico em formato PDF
+- Geração de até **1 relatório** técnico em formato PDF
 - Uso local, sem envio de dados para servidores externos
 - Interface completa para avaliação do fluxo de trabalho
 
@@ -24,7 +24,7 @@ Indicada para **avaliação da ferramenta**, com as seguintes limitações:
 Indicada para profissionais que precisam eliminar gargalos na análise de áudio.
 
 - Transcrição ilimitada — processe quantos arquivos forem necessários
-- Geração ilimitada de laudos técnicos em formato PDF com cadeia de custódia
+- Geração ilimitada de relatórios técnicos em formato PDF com cadeia de custódia
 - Redução significativa do tempo gasto em escuta manual e digitação
 - Acesso a atualizações e novos recursos durante a vigência da licença
 - Suporte relacionado ao uso da licença
@@ -51,7 +51,6 @@ Para consultar valores e adquirir uma licença de uso:
 
 ## 📌 Observações
 
-- Os valores não são exibidos neste repositório para permitir flexibilidade comercial.
 - A licença gratuita possui limitações e é destinada à avaliação da ferramenta.
 - O uso das funcionalidades completas está sujeito à aquisição de licença de uso válida.
 - Os limites exatos de cada modalidade estão definidos no [`EULA.md`](EULA.md).

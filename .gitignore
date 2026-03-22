@@ -15,3 +15,6 @@ ffmpeg/
 # PyInstaller output
 build/
 dist/
+
+# Claude Code
+.claude/
