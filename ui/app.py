@@ -178,12 +178,30 @@ class AptApp(ctk.CTk):
         # Código da máquina — necessário para solicitar licença
         from licensing.machine_id import get_machine_id_display
         machine_code = get_machine_id_display()
+        frame_machine = ctk.CTkFrame(frame_lic, fg_color="transparent")
+        frame_machine.grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 2))
         ctk.CTkLabel(
-            frame_lic,
+            frame_machine,
             text=f"Código da máquina: {machine_code}",
             font=ctk.CTkFont(size=10),
             text_color="#6B7280",
-        ).grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 2))
+        ).pack(side="left")
+        def _copiar_machine_code(code=machine_code):
+            self.clipboard_clear()
+            self.clipboard_append(code)
+        ctk.CTkButton(
+            frame_machine,
+            text="Copiar",
+            width=52,
+            height=18,
+            font=ctk.CTkFont(size=10),
+            fg_color="transparent",
+            border_width=1,
+            border_color="#6B7280",
+            text_color="#6B7280",
+            hover_color="#1F2937",
+            command=_copiar_machine_code,
+        ).pack(side="left", padx=(6, 0))
 
         # Logo customizada — visível apenas para licença institucional (logo_custom)
         self._btn_logo = ctk.CTkButton(
