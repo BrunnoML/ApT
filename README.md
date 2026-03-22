@@ -1,11 +1,11 @@
-<h1 align="center">🎙️ ApT - Áudio para Texto</h1>
+<h1 align="center">🎙️ ApT — Áudio para Texto</h1>
 
 <p align="center">
 <strong>Software de transcrição de áudio licenciado para uso local.</strong>
 </p>
 
 <p align="center">
-Transforme horas de áudio em texto pesquisável em minutos — ideal para profissionais da área jurídica, investigativa e pericial que precisam ganhar produtividade, organizar evidências e gerar laudos prontos para o processo.
+Transforme horas de áudio em texto pesquisável em minutos — ideal para profissionais da área jurídica, investigativa e pericial que precisam ganhar produtividade, organizar evidências e gerar relatórios prontos para o processo.
 </p>
 
 <p align="center">
@@ -13,11 +13,15 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
   <a href="#-licenciamento">Licenciamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licenciamento-1">Código Aberto</a>
+  <a href="#-licença-do-código">Código Aberto</a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/BrunnoML/ApT/releases/tag/v1.0.0">
+    <img alt="Release" src="https://img.shields.io/badge/release-v1.0.0-6d28d9?labelColor=000000">
+  </a>
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Apache-2.0&color=49AA26&labelColor=000000">
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-blue?labelColor=000000">
 </p>
 
 <p align="center">
@@ -27,10 +31,6 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
 ---
 
 <p align="center">
-  <img alt="ApT" src="/images/preview.png" width="500px">
-</p>
-
-<p align="center">
   🔒 <strong>Processamento 100% local</strong> — seus arquivos de áudio nunca saem do seu dispositivo.
 </p>
 
@@ -38,21 +38,20 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
 
 ## ⚖️ Sobre o ApT
 
-O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada, com geração de **laudo PDF forense** e elementos voltados à documentação da cadeia de custódia do material processado.
+O **ApT (Áudio para Texto)** é uma aplicação desktop que utiliza inteligência artificial para transcrever arquivos de áudio em texto de forma automatizada, com geração de **relatório técnico em PDF** e documentação da cadeia de custódia do material processado — em conformidade com a Lei 13.964/2019 (Pacote Anticrime).
 
 Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
 - Substituir horas de escuta manual por texto pesquisável em minutos
 - Localizar trechos relevantes por palavra-chave, sem ouvir arquivo por arquivo
-- Gerar laudos prontos para juntada ao processo, com hash SHA-256 e documentação técnica do material processado
+- Gerar relatórios prontos para juntada ao processo, com hash SHA-256 de cada arquivo processado
 
 ---
 
 ## 🎯 Público-alvo
 
-O ApT é especialmente útil para:
-
 - Delegados e investigadores
+- Escrivães e agentes de polícia
 - Advogados e defensores públicos
 - Promotores e magistrados
 - Peritos e analistas
@@ -63,37 +62,26 @@ O ApT é especialmente útil para:
 ## ✨ Funcionalidades
 
 - Interface gráfica moderna com tema escuro
-- Transcrição automática de áudios usando IA (100% local)
-- Processamento de múltiplos arquivos em lote
-- Seleção de modelos Whisper (`base`, `medium`, `large`)
-- Exportação de transcrições em `.txt`
-- Geração de **laudo técnico em formato PDF** com cadeia de custódia (hash SHA-256)
-- Organização por pastas de entrada e saída
+- Transcrição automática de áudios com IA (100% local, sem internet)
+- Processamento em lote — selecione a pasta e processe todos os áudios de uma vez
+- Modelos Whisper: `base` ⭐ recomendado · `medium` · `large` para áudios difíceis
+- Exportação de transcrições em `.txt` com hash SHA-256 de cada arquivo
+- Geração de **relatório técnico em PDF** com cadeia de custódia (Lei 13.964/2019)
+- FFmpeg embutido — sem necessidade de instalação adicional
 
 ---
 
 ## 📄 Licenciamento
 
-O ApT é disponibilizado sob **modelo de licenciamento de software**. O Autor concede ao usuário o direito de uso da aplicação — não há prestação de serviço, processamento remoto ou dependência de servidores externos.
+| Licença | Limite |
+|---------|--------|
+| **Gratuita** | Até 30 min de áudio acumulado + 1 relatório PDF |
+| **Mensal** | Transcrição e relatórios ilimitados por 30 dias |
+| **Anual** | Transcrição e relatórios ilimitados por 12 meses _(melhor custo-benefício)_ |
 
-A versão comunitária inclui funcionalidades limitadas. Funcionalidades adicionais são habilitadas mediante **licença de uso** adquirida junto ao Autor.
+👉 **Solicite a licença:**
 
-O software é executado integralmente no ambiente do usuário, sem dependência de infraestrutura externa mantida pelo autor.
-
-### 🟢 Versão Gratuita
-- Transcrição de até **30 minutos** de áudio (acumulado)
-- Geração de até **1 laudo** técnico em formato PDF
-- Uso local, sem envio de dados para servidores externos
-
-### 🔵 Versão Licenciada (Profissional)
-- Transcrição e geração de laudos PDF ilimitados
-- Cadeia de custódia completa em cada laudo
-- Recursos adicionais conforme a licença adquirida
-- Acesso a atualizações e suporte relacionado ao uso da licença, durante sua vigência
-
-👉 **Consulte as modalidades de licenciamento de uso disponíveis:**
-
-🔗 **https://www.brunnoml.com.br/apt**
+🔗 **[brunnoml.com.br/produtos/apt](https://www.brunnoml.com.br/produtos/apt)**
 
 ---
 
@@ -101,13 +89,15 @@ O software é executado integralmente no ambiente do usuário, sem dependência 
 
 ### 👤 Usuário final (recomendado)
 
-> Em breve será disponibilizada uma versão instalável.
+1. Acesse a [página de releases](https://github.com/BrunnoML/ApT/releases/tag/v1.0.0)
+2. Baixe `ApT-v1.0.0-win64.zip`
+3. Extraia em qualquer pasta
+4. Execute `ApT.exe`
 
-O objetivo é permitir que o usuário:
+> **Modelos Whisper** são baixados automaticamente na primeira execução de cada modelo:
+> `base` ≈ 74 MB · `medium` ≈ 769 MB · `large` ≈ 1,5 GB
 
-- baixe o instalador
-- execute com duplo clique
-- utilize sem necessidade de terminal
+**Requisitos:** Windows 10 / 11 (64-bit)
 
 ---
 
@@ -120,27 +110,14 @@ git clone https://github.com/BrunnoML/ApT.git
 cd apt
 ```
 
-2. Crie um ambiente virtual:
+2. Crie e ative o ambiente virtual:
 
 ```bash
 python -m venv .venv
-```
-
-Ative:
-
-**Windows**
-
-```
 .venv\Scripts\activate
 ```
 
-**Linux/macOS**
-
-```bash
-source .venv/bin/activate
-```
-
-3. Instale dependências:
+3. Instale as dependências:
 
 ```bash
 pip install --upgrade pip
@@ -154,44 +131,30 @@ pip install --no-build-isolation -r requirements.txt
 python main.py
 ```
 
----
-
-## 🔈 Configuração do FFmpeg
-
-O FFmpeg é necessário para o processamento dos áudios.
-
-Atualmente, a instalação é manual, conforme descrito abaixo.
-
-> ⚠️ Em versões futuras, o FFmpeg será incorporado automaticamente ao sistema.
-
-### Download:
-
-[https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
-
-Baixe:
-
-```
-ffmpeg-release-essentials.zip
-```
-
-Configure conforme instruções padrão do Windows.
+> Para empacotar o executável: `pyinstaller apt.spec`
 
 ---
 
 ## 🚀 Tecnologias
 
-- Python 3.12
-- Whisper (OpenAI) — transcrição de áudio local
-- CustomTkinter — interface moderna
-- ReportLab — geração de laudo PDF
-- Cryptography — verificação de licença (Ed25519)
-- FFmpeg — processamento de áudio
+- **Python 3.12**
+- **Whisper (OpenAI)** — transcrição de áudio local
+- **CustomTkinter** — interface moderna
+- **ReportLab** — geração de relatório PDF
+- **Cryptography (Ed25519)** — verificação de licença
+- **FFmpeg** — processamento de áudio (embutido)
 
 ---
 
-## 🔐 Licenciamento
+## 📈 Evolução planejada
 
-O projeto possui duas camadas de licenciamento:
+- Identificação de interlocutores (diarização)
+- Detecção de palavras-chave configurável
+- Integração com outras ferramentas forenses
+
+---
+
+## 🔐 Licença do código
 
 ### 📂 Código-fonte (comunitário)
 
@@ -204,20 +167,8 @@ O acesso às funcionalidades avançadas exige licença de uso válida, adquirida
 Documentos relevantes:
 
 - [`TERMS.md`](TERMS.md) — Termos de uso
-- [`EULA.md`](EULA.md) — Contrato de licença de usuário final (EULA)
-- [`PRICING.md`](PRICING.md) — Modalidades de licenciamento disponíveis
-
----
-
-## 📈 Evolução do Projeto
-
-O ApT está em evolução contínua, com melhorias planejadas:
-
-- Instalador simplificado (sem necessidade de terminal)
-- FFmpeg incorporado automaticamente
-- Identificação de interlocutores (diarização)
-- Detecção de palavras-chave configurável
-- Integração com outras ferramentas forenses
+- [`EULA.md`](EULA.md) — Contrato de licença de usuário final
+- [`PRICING.md`](PRICING.md) — Modalidades de licenciamento
 
 ---
 
@@ -225,7 +176,7 @@ O ApT está em evolução contínua, com melhorias planejadas:
 
 Desenvolvido por **Brunno ML**
 
-🔗 [https://www.brunnoml.com.br](https://www.brunnoml.com.br)
+🔗 [brunnoml.com.br](https://www.brunnoml.com.br)
 
 ---
 
