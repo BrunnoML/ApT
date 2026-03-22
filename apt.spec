@@ -49,6 +49,8 @@ a = Analysis(
            (str(FFMPEG_BIN / "ffplay.exe"), "ffmpeg/bin")] if has_ffmpeg else []),
         # Assets do CustomTkinter (temas e fontes)
         (str(ROOT / ".venv" / "Lib" / "site-packages" / "customtkinter"), "customtkinter"),
+        # Assets do Whisper (mel_filters.npz, tiktoken vocab files)
+        (str(ROOT / ".venv" / "Lib" / "site-packages" / "whisper" / "assets"), "whisper/assets"),
     ],
     hiddenimports=[
         # Whisper
