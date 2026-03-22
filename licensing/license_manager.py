@@ -147,6 +147,16 @@ def get_status_licenca() -> dict:
     return {"valida": False, "mensagem": mensagem, "dados": {}}
 
 
+def get_logo_path() -> str | None:
+    return _ler().get("logo_path")
+
+
+def set_logo_path(path: str | None) -> None:
+    data = _ler()
+    data["logo_path"] = path
+    _salvar(data)
+
+
 def ativar_licenca(caminho_lic: str) -> tuple[bool, str]:
     if not os.path.exists(caminho_lic):
         return False, "Arquivo não encontrado."

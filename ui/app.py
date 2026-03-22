@@ -21,6 +21,9 @@ from licensing.license_manager import (
     tem_licenca_ativa,
     get_status_licenca,
     ativar_licenca,
+    carregar_licenca_ativa,
+    get_logo_path,
+    set_logo_path,
     MAX_FREE_LAUDOS,
     MAX_FREE_SEGUNDOS,
     laudos_gerados,
@@ -180,7 +183,22 @@ class AptApp(ctk.CTk):
             text=f"Código da máquina: {machine_code}",
             font=ctk.CTkFont(size=10),
             text_color="#6B7280",
-        ).grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 6))
+        ).grid(row=3, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 2))
+
+        # Logo customizada — visível apenas para licença institucional (logo_custom)
+        self._btn_logo = ctk.CTkButton(
+            frame_lic, text="Selecionar logo da organização", width=220,
+            fg_color="transparent", border_width=1,
+            border_color="#6B21A8", text_color="#A855F7",
+            hover_color="#3B1060",
+            font=ctk.CTkFont(size=11),
+            command=self._selecionar_logo,
+        )
+        self._label_logo = ctk.CTkLabel(
+            frame_lic, text="", font=ctk.CTkFont(size=10), text_color="#6B7280"
+        )
+        # Exibe logo apenas se licença institucional ativa
+        self._atualizar_visibilidade_logo(frame_lic)
 
         # ── Progresso ──
         self._progress_bar = ctk.CTkProgressBar(self, width=500)
@@ -296,6 +314,31 @@ class AptApp(ctk.CTk):
         if pasta:
             self._output_path.set(os.path.normpath(pasta))
 
+    def _atualizar_visibilidade_logo(self, frame_lic) -> None:
+        lic = carregar_licenca_ativa()
+        tem_logo_custom = lic and "logo_custom" in lic.get("features", [])
+        if tem_logo_custom:
+            self._btn_logo.grid(row=4, column=0, padx=8, pady=(0, 2), sticky="w")
+            logo_atual = get_logo_path()
+            nome = os.path.basename(logo_atual) if logo_atual else "logo padrão (ApT)"
+            self._label_logo.configure(text=f"Logo: {nome}")
+            self._label_logo.grid(row=5, column=0, columnspan=2, sticky="w", padx=8, pady=(0, 6))
+        else:
+            self._btn_logo.grid_forget()
+            self._label_logo.grid_forget()
+
+    def _selecionar_logo(self) -> None:
+        caminho = filedialog.askopenfilename(
+            title="Selecionar logo da organização",
+            filetypes=[("Imagens", "*.png *.jpg *.jpeg"), ("Todos os arquivos", "*.*")]
+        )
+        if caminho:
+            set_logo_path(caminho)
+            self._label_logo.configure(text=f"Logo: {os.path.basename(caminho)}")
+        else:
+            set_logo_path(None)
+            self._label_logo.configure(text="Logo: padrão (ApT)")
+
     def _carregar_licenca(self) -> None:
         caminho = filedialog.askopenfilename(
             title="Selecionar licença .apt_lic",
@@ -367,6 +410,7 @@ class AptApp(ctk.CTk):
                 self._cb_concluido,
                 self._cb_erro,
             ),
+            kwargs={"logo_path": get_logo_path()},
             daemon=True,
         ).start()
 

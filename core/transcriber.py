@@ -17,7 +17,7 @@ from typing import Callable
 
 import whisper
 
-from core.audio_utils import calcular_hash, obter_duracao, segundos_totais
+from core.audio_utils import calcular_hash, obter_duracao, obter_tamanho, segundos_totais, extrair_data_arquivo
 from core.pdf_report import gerar_laudo_pdf
 from licensing.license_manager import (
     tem_licenca_ativa,
@@ -40,6 +40,7 @@ def transcrever_arquivos(
     progress_callback: Callable[[int, int, str], None],
     done_callback: Callable[[str, str | None, str | None], None],
     error_callback: Callable[[str], None],
+    logo_path: str | None = None,
 ) -> None:
     """
     Transcreve todos os áudios de input_path e salva em output_path.
@@ -117,13 +118,8 @@ def transcrever_arquivos(
 
         hash_arquivo = calcular_hash(audio_path)
         duracao = obter_duracao(audio_path)
-
-        # Data de modificação do arquivo (reflete criação/recebimento no dispositivo original)
-        try:
-            mtime = os.path.getmtime(audio_path)
-            data_arquivo = datetime.fromtimestamp(mtime).strftime("%d/%m/%Y %H:%M:%S")
-        except Exception:
-            data_arquivo = "não disponível"
+        tamanho = obter_tamanho(audio_path)
+        data_arquivo, fonte_data = extrair_data_arquivo(audio_path, filename)
 
         try:
             result = model.transcribe(audio_path)
@@ -143,6 +139,8 @@ def transcrever_arquivos(
         arquivos_dados.append({
             "nome": filename,
             "data": data_arquivo,
+            "fonte_data": fonte_data,
+            "tamanho": tamanho,
             "hash": hash_arquivo,
             "duracao": duracao,
             "segundos": seg,
@@ -166,7 +164,8 @@ def transcrever_arquivos(
     if gerar_pdf and arquivos_dados:
         try:
             caminho_pdf, hash_pdf = gerar_laudo_pdf(
-                output_path, unidade, responsavel, model_name, arquivos_dados
+                output_path, unidade, responsavel, model_name, arquivos_dados,
+                logo_path=logo_path,
             )
             # Registra hash do PDF ao final de transcricoes.txt para consulta futura
             agora_str = datetime.now().strftime("%d/%m/%Y às %H:%M:%S")
