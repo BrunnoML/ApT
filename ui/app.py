@@ -107,13 +107,19 @@ class AptApp(ctk.CTk):
         )
         ctk.CTkButton(frame_pastas, text="Selecionar", width=90,
                       command=self._select_input).grid(row=1, column=2, padx=8, pady=2)
+        ctk.CTkLabel(
+            frame_pastas,
+            text="Formatos aceitos: mp3, m4a, m4b, ogg, oga, opus, wav, mp4, wma, flac, aac, amr, awb, 3gp",
+            font=ctk.CTkFont(size=10),
+            text_color="#6B7280",
+        ).grid(row=2, column=0, columnspan=3, sticky="w", padx=8, pady=(0, 4))
 
-        ctk.CTkLabel(frame_pastas, text="Saída:").grid(row=2, column=0, sticky="w", padx=8, pady=2)
+        ctk.CTkLabel(frame_pastas, text="Saída:").grid(row=3, column=0, sticky="w", padx=8, pady=2)
         ctk.CTkEntry(frame_pastas, textvariable=self._output_path, width=320).grid(
-            row=2, column=1, padx=4, pady=2
+            row=3, column=1, padx=4, pady=2
         )
         ctk.CTkButton(frame_pastas, text="Selecionar", width=90,
-                      command=self._select_output).grid(row=2, column=2, padx=8, pady=(2, 8))
+                      command=self._select_output).grid(row=3, column=2, padx=8, pady=(2, 8))
 
         # ── Modelo Whisper ──
         frame_modelo = ctk.CTkFrame(self)

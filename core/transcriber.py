@@ -9,6 +9,7 @@ Callbacks esperados:
   done_callback(msg: str, pdf_path: str | None, hash_pdf: str | None) -> None
   error_callback(msg: str) -> None
 """
+import concurrent.futures
 import io
 import os
 import sys
@@ -27,7 +28,13 @@ from licensing.license_manager import (
     MAX_FREE_SEGUNDOS,
 )
 
-EXTENSOES_SUPORTADAS = (".m4a", ".ogg", ".wav", ".mp3", ".mp4", ".wma", ".flac", ".aac")
+EXTENSOES_SUPORTADAS = (
+    ".mp3", ".m4a", ".m4b", ".ogg", ".oga", ".opus",
+    ".wav", ".mp4", ".wma", ".flac", ".aac",
+    ".amr", ".awb", ".3gp",
+)
+TIMEOUT_TRANSCRICAO = 120       # segundos — arquivo legível (mutagen ok)
+TIMEOUT_ILEGIVEL    = 30        # segundos — arquivo que mutagen não reconheceu
 
 
 def transcrever_arquivos(
@@ -121,11 +128,23 @@ def transcrever_arquivos(
         tamanho = obter_tamanho(audio_path)
         data_arquivo, fonte_data = extrair_data_arquivo(audio_path, filename)
 
+        # Se mutagen não leu metadados, o arquivo provavelmente está corrompido:
+        # usa timeout curto para não travar no FFmpeg.
+        timeout = TIMEOUT_ILEGIVEL if duracao == "Indisponível" else TIMEOUT_TRANSCRICAO
         try:
-            result = model.transcribe(audio_path)
+            _ex = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+            _fut = _ex.submit(model.transcribe, audio_path)
+            _ex.shutdown(wait=False)  # não bloqueia se a thread travar
+            result = _fut.result(timeout=timeout)
             texto = result["text"]
+        except concurrent.futures.TimeoutError:
+            texto = "[ARQUIVO ILEGÍVEL: o processamento excedeu o tempo limite — arquivo possivelmente corrompido ou incompleto]"
         except Exception as e:
-            texto = f"[ERRO NA TRANSCRIÇÃO: {e}]"
+            msg = str(e)
+            if "Failed to load audio" in msg or "Invalid data" in msg or "Error opening" in msg:
+                texto = "[ARQUIVO ILEGÍVEL: não foi possível decodificar o áudio — arquivo corrompido, incompleto ou em formato inválido]"
+            else:
+                texto = f"[ERRO NA TRANSCRIÇÃO: {msg}]"
 
         with open(output_file, "a", encoding="utf-8") as f:
             f.write(f"\n{'=' * 60}\n")

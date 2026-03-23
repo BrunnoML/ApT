@@ -13,12 +13,13 @@ Transforme horas de áudio em texto pesquisável em minutos — ideal para profi
   <a href="#-licenciamento">Licenciamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença-do-código">Código Aberto</a>
+  <a href="#-licença-do-código">Código Aberto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="CHANGELOG.md">Changelog</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/BrunnoML/ApT/releases/tag/v1.0.0">
-    <img alt="Release" src="https://img.shields.io/badge/release-v1.0.0-6d28d9?labelColor=000000">
+  <a href="https://github.com/BrunnoML/ApT/releases/tag/v1.1.0">
+    <img alt="Release" src="https://img.shields.io/badge/release-v1.1.0-6d28d9?labelColor=000000">
   </a>
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Apache-2.0&color=49AA26&labelColor=000000">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-blue?labelColor=000000">
@@ -71,6 +72,28 @@ Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
 ---
 
+## 🎵 Formatos de áudio suportados
+
+| Extensão | Origem principal |
+|----------|-----------------|
+| `.mp3`   | Formato universal |
+| `.m4a`   | iOS, Android, Signal, WhatsApp (versões antigas) |
+| `.m4b`   | iOS Voice Memos |
+| `.ogg` / `.oga` | Telegram |
+| `.opus`  | WhatsApp (atual), Signal, Viber |
+| `.wav`   | Gravações diversas |
+| `.mp4`   | Instagram, Messenger (pista de áudio) |
+| `.aac`   | Facebook, Android |
+| `.flac`  | Gravações de alta qualidade |
+| `.wma`   | Dispositivos Windows antigos |
+| `.amr`   | Android (WhatsApp versões antigas, gravadores) |
+| `.awb`   | AMR Wideband — variante de `.amr` |
+| `.3gp`   | Gravador nativo Android, extrações UFED/Cellebrite |
+
+> Todos os formatos são processados via **FFmpeg embutido** — nenhuma instalação adicional necessária.
+
+---
+
 ## 📄 Licenciamento
 
 | Licença | Limite |
@@ -89,7 +112,7 @@ Desenvolvido para eliminar o gargalo mais comum na análise de áudios:
 
 ### 👤 Usuário final (recomendado)
 
-1. Baixe o instalador: **[ApT-Setup-v1.0.0.exe](https://github.com/BrunnoML/ApT/releases/download/v1.0.0/ApT-Setup-v1.0.0.exe)** (194 MB)
+1. Baixe o instalador: **[ApT-Setup-v1.1.0.exe](https://github.com/BrunnoML/ApT/releases/download/v1.1.0/ApT-Setup-v1.1.0.exe)**
 2. Execute o instalador e siga os passos
 3. Abra o ApT pelo Menu Iniciar
 
