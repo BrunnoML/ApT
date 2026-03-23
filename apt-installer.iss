@@ -1,10 +1,10 @@
 ; ============================================================
 ; ApT — Áudio para Texto
-; Script Inno Setup v1.0.0
+; Script Inno Setup v1.1.0
 ; ============================================================
 
 #define AppName      "ApT"
-#define AppVersion   "1.0.0"
+#define AppVersion   "1.1.0"
 #define AppPublisher "Brunno ML"
 #define AppURL       "https://www.brunnoml.com.br/produtos/apt"
 #define AppExeName   "ApT.exe"
